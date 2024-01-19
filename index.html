@@ -7,36 +7,102 @@
 <style>
 	body {
 		font-family: Arial, sans-serif;
-		margin: 0;
-		padding: 20px;
+		margin: 0 auto;
+		width: 90%;
 	}
-	.section {
+
+	h1, h2 {
+		color: #1a1a1b;
+		font-weight: 800;
+	}
+
+	.header, .footer {
+		text-align: center;
+		background-color: #f0f0f0;
+		padding: 10px;
 		margin-bottom: 20px;
-		border-bottom: 1px solid #eee;
-		padding-bottom: 10px;
 	}
+
+	.section {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 1.5em;
+		align-items: flex-start;
+		border-bottom: 1px solid #eee;
+		padding-bottom: 20px;
+	}
+
+	.contact-info {
+		background-color: #f5f5f5;
+		border: 1px solid #ddd;
+		padding: 20px;
+		margin: 20px 0;
+		text-align: center;
+	}
+
 	.header {
-		font-size: 22px;
+		font-size: 1.2em;
 		font-weight: bold;
 		margin-bottom: 10px;
 	}
+
 	.list {
 		list-style: none;
 		padding: 0;
 		margin: 0;
 	}
+
 	.list-item {
-		margin-bottom: 5px;
+		margin: 2em 0.5em
+	}
+
+	.section img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	@media only screen and (min-width: 600px) {
+		body{
+			padding: 1em;
+		}
+		.section {
+			justify-content: space-between;
+		}
+
+		.section img {
+			width: 48%; /* Half width on PC */
+			margin-right: 2%; /* Add a small margin between image and text */
+		}
+
+		.list {
+			width: 48%; /* Half width on PC */
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		.section img {
+			width: 100%; /* Full width on mobile */
+			margin-bottom: 10px; /* Add some spacing between image and text on mobile */
+		}
+
+		.list {
+			width: 100%; /* Full width on mobile */
+		}
 	}
 </style>
 </head>
 <body>
+	<div class="header">
+		<h1>A Data-Driven Storyteller | Bridging Code and Cognition</h1>
+	</div>
+
 	<div class="section">
-		<h1 class="header">A Data-Driven Storyteller | Bridging Code and Cognition</h1>
 		<p>At the heart of my professional identity lies a confluence of creativity and technical expertise. I'm not just a developer, I'm a problem-solver, crafting digital solutions with equal fluency in both the MERN and LAMP stacks. But my journey doesn't end there. I delve into the world of data, wielding Python and Jupyter Lab as my tools to uncover hidden patterns and weave them into compelling narratives through Power BI and Tableau.</p>
 	</div>
-	<div class="section">
+
 	<h2 class="header">Skillset Spectrum</h2>
+	<div class="section">
+		<img src="biz_alty.jpg" alt="">
 		<ul class="list">
 			<li class="list-item">Full-Stack Development: From elegant front-end interfaces to robust back-end architecture, I navigate both with frameworks like React and Node.js.</li>
 			<li class="list-item">Data Analyst & Engineer: Whether it's wrangling massive datasets or unearthing hidden trends, I utilize Python and Jupyter Lab to extract actionable insights.</li>
@@ -45,19 +111,34 @@
 			<li class="list-item">Clear Communicator: I seamlessly switch gears, tailoring my explanations to technical audiences and business leaders alike, ensuring everyone speaks the same data language.</li>
 		</ul>
 	</div>
-
+	
+	<h2 class="header">Past Collaborations</h2>
 	<div class="section">
-		<h2 class="header">Past Collaborations</h2>
-		<p>I have partnered with a diverse range of companies, tackling challenging technical problems and driving strategic decision-making through data-driven insights. (Replace this with a list of companies or industries you've worked with). </p>
+		<ul class="list">
+			<li class="list-item">TValton Services Nigeria Limited</li>
+			<li class="list-item">Enjaiztech Nigeria Limited</li>
+			<li class="list-item">Tequant</li>
+		</ul>
 	</div>
+	
+	<h2 class="header">Toolbelt of Expertise</h2>
 	<div class="section">
-		<h2 class="header">Toolbelt of Expertise</h2>
 		<ul class="list">
 			<li class="list-item">Programming Languages: Python, JavaScript, SQL</li>
 			<li class="list-item">Libraries & Frameworks: React, Node.js, Express, Pandas, NumPy, Scikit-learn</li>
 			<li class="list-item">Visualization Tools: Power BI, Tableau</li>
-			<li class="list-item">Cloud Platforms: (AWS, Azure, GCP) (Optional)</li>
 		</ul>
+		<img src="profit.jpg" alt="">
+	</div>
+
+	<div class="contact-info">
+		<h2>Contact Information</h2>
+		<p>Email: oluwolefasakin007@gmail.com</p>
+		<p>Phone: (123) 456-7890</p>
+	</div>
+
+	<div class="footer">
+		<p>Copyright © 2024 Oluwole Fasakin. All rights reserved.</p>
 	</div>
 </body>
 </html>
