@@ -4,18 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Data-Driven Storyteller | Bridging Code and Cognition</title>
+    <title>Oluwole Fasakin | Data-Driven Storyteller</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0 auto;
             width: 90%;
+            background-color: #f9f9f9;
+        }
+
+        .banner {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 50px;
+            margin-bottom: 20px;
         }
 
         .header, .footer {
             text-align: center;
-            background-color: #f0f0f0;
+            background-color: #333;
+            color: #fff;
             padding: 10px;
             margin-bottom: 20px;
         }
@@ -43,6 +53,24 @@
             margin: 0;
         }
 
+        .initiatives-section {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+        }
+
+        .initiative {
+            text-align: center;
+            width: 48%;
+            padding: 20px;
+            border: 1px solid #ddd;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .initiative:hover {
+            transform: scale(1.05);
+        }
+
         .contact-info {
             background-color: #f5f5f5;
             border: 1px solid #ddd;
@@ -52,19 +80,13 @@
         }
 
         .header {
-            font-size: 1.2em;
+            font-size: 1.5em;
             font-weight: bold;
             margin-bottom: 10px;
         }
 
-        .list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
         .list-item {
-            margin: 2em 0.5em;
+            margin: 1em 0;
         }
 
         .section img {
@@ -104,93 +126,107 @@
             .list {
                 width: 100%;
             }
+
+            .initiative {
+                width: 100%;
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="header">
-        <h1>A Data-Driven Storyteller | Bridging Code and Cognition</h1>
+    <div class="banner">
+        <h1>Data-Driven Storyteller | Bridging Code and Cognition</h1>
     </div>
 
     <div class="section fade-in">
-        <p>At the heart of my professional identity lies a confluence of creativity and technical expertise. I'm not
-            just a developer, I'm a problem-solver, crafting digital solutions with equal fluency in both the MERN and
-            LAMP stacks. But my journey doesn't end there. I delve into the world of data, wielding Python and Jupyter
+        <p>At the core of my professional identity lies a confluence of creativity and technical expertise. I'm not
+            just a developer; I'm a problem-solver, crafting digital solutions with equal fluency in both the MERN and
+            LAMP stacks. However, my journey doesn't end there. I delve into the world of data, wielding Python and Jupyter
             Lab as my tools to uncover hidden patterns and weave them into compelling narratives through Power BI and
             Tableau.</p>
     </div>
 
     <h2 class="header">Skillset Spectrum</h2>
     <div class="section fade-in">
-        <img src="biz_alty.jpg" alt="">
         <ul class="list">
-            <li class="list-item"><i class="fa fa-check"></i> Full-Stack Development: From elegant front-end
-                interfaces to robust back-end architecture, I navigate both with frameworks like React and Node.js.</li>
-            <li class="list-item"><i class="fa fa-check"></i> Data Analyst & Engineer: Whether it's wrangling massive
-                datasets or unearthing hidden trends, I utilize Python and Jupyter Lab to extract actionable insights.</li>
-            <li class="list-item"><i class="fa fa-check"></i> Machine Learning Architect: I speak the language of
-                algorithms, building and deploying models that learn, adapt, and optimize your operations.</li>
-            <li class="list-item"><i class="fa fa-check"></i> Data Visualization Specialist: I don't just show you the
-                data, I paint a picture with tools like Power BI and Tableau, transforming dry numbers into dynamic
-                dashboards that captivate and inform.</li>
-            <li class="list-item"><i class="fa fa-check"></i> Clear Communicator: I seamlessly switch gears, tailoring
-                my explanations to technical audiences and business leaders alike, ensuring everyone speaks the same data
-                language.</li>
+            <li class="list-item"><i class="fa fa-check"></i> Full-Stack Development: Crafting elegant front-end
+                interfaces and robust back-end architecture using frameworks like React and Node.js.</li>
+            <li class="list-item"><i class="fa fa-check"></i> Data Analyst & Engineer: Wrangling massive
+                datasets and unearthing hidden trends using Python and Jupyter Lab for actionable insights.</li>
+            <li class="list-item"><i class="fa fa-check"></i> Machine Learning Architect: Building and deploying models that learn, adapt, and optimize operations.</li>
+            <li class="list-item"><i class="fa fa-check"></i> Data Visualization Specialist: Transforming dry numbers into dynamic dashboards with tools like Power BI and Tableau.</li>
+            <li class="list-item"><i class="fa fa-check"></i> Clear Communicator: Tailoring explanations to technical audiences and business leaders, ensuring everyone speaks the same data language.</li>
         </ul>
+        <img src="fash_wits.png" alt="The creator of Witslens">
+    </div>
+
+    <h2 class="header">Initiatives</h2>
+    <div class="initiatives-section">
+        <div class="initiative fade-in" onclick="window.location.href='www.witslens.com'">
+            <img src="witslens.png" alt="WitsLens Logo" style="width: 100px; height: 100px; object-fit: contain;">
+            <h3>WitsLens</h3>
+            <p>Exploring learning through a different lens.</p>
+        </div>
+        <div class="initiative fade-in" onclick="window.location.href='techcurious.html'">
+            <img src="techcurious.png" alt="TechCurious Logo" style="width: 100px; height: 100px; object-fit: contain;">
+            <h3>TechCurious</h3>
+            <p>Unleashing curiosity in the world of technology.</p>
+        </div>
     </div>
 
     <h2 class="header">Past Collaborations</h2>
     <div class="section" id="slideUpSection">
         <ul class="list">
             <li class="list-item"><i class="fas fa-building"></i> TValton Services Nigeria Limited</li>
-            <li class="list-item"><i class="fas fa-building"></i> Enjaiztech Nigeria Limited</li>
             <li class="list-item"><i class="fas fa-building"></i> Tequant</li>
         </ul>
     </div>
 
     <h2 class="header">Toolbelt of Expertise</h2>
     <div class="section fade-in">
+        <img src="fash_tech.jpg" alt="The convener of Techcurious">
         <ul class="list">
             <li class="list-item"><i class="fas fa-code"></i> Programming Languages: Python, JavaScript, SQL</li>
             <li class="list-item"><i class="fas fa-cogs"></i> Libraries & Frameworks: React, Node.js, Express, Pandas,
                 NumPy, Scikit-learn</li>
             <li class="list-item"><i class="fas fa-chart-bar"></i> Visualization Tools: Power BI, Tableau</li>
         </ul>
-        <img src="profit.jpg" alt="">
     </div>
 
     <div class="contact-info">
         <h2>Contact Information</h2>
         <p><i class="fas fa-envelope"></i> oluwolefasakin007@gmail.com</p>
-        <p><i class="fas fa-phone"></i> +234 816 912 1716</p>
+        <p><i class="fas fa-whatsapp"></i> +234 816 912 1716</p>
     </div>
 
     <div class="footer">
         <p>Copyright © 2024 Oluwole Fasakin. All rights reserved.</p>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5
+            };
+
+            const handleIntersection = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(handleIntersection, observerOptions);
+            const slideUpSection = document.getElementById('slideUpSection');
+            observer.observe(slideUpSection);
+        });
+    </script>
 </body>
 
-<script>
-	document.addEventListener("DOMContentLoaded", function () {
-		const observerOptions = {
-			root: null,
-			rootMargin: '0px',
-			threshold: 0.5 
-		};
-
-		const handleIntersection = (entries, observer) => {
-			entries.forEach(entry => {
-				if (entry.isIntersecting) {
-					entry.target.classList.add('fade-in');
-					observer.unobserve(entry.target);
-				}
-			});
-		};
-
-		const observer = new IntersectionObserver(handleIntersection, observerOptions);
-		const slideUpSection = document.getElementById('slideUpSection');
-		observer.observe(slideUpSection);
-	});
-</script>
 </html>
