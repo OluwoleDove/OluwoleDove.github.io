@@ -143,20 +143,19 @@ body {
     }
 
     .banner {
-       margin-bottom: -350px;
-       width: 100%;
+       margin-bottom: -340px;
     }
 
     .banner::before {
         background-size: contain;
-        background-position: center;
+        background-position: center/cover no-repeat;
+        width: 100%;
         height: 20vh;
     }
 
     .banner h1 {
         font-size: 1.2em;
         font-weight: 600;
-        padding: 0.5em 0.1em;
         margin-bottom: 10px;
     }
 
