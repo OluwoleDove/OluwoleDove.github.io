@@ -138,8 +138,13 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+    body{
+        padding: 0;
+    }
+
     .banner {
-       margin-bottom: -450px;
+       margin-bottom: -350px;
+       width: 100%;
     }
 
     .banner::before {
