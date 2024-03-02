@@ -44,9 +44,8 @@
 
         .image-container img {
             width: 80%;
-            max-width: 300px;
             border-radius: 10px;
-            /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .menu-options {
@@ -67,6 +66,18 @@
             object-fit: contain;
         }
 
+        #installments-section {
+            width: inherit;
+            font-size: 1.5em;
+            font-weight: 700;
+            text-align: center;
+            padding: 20px;
+            background-color: #3498db; /* Add a background color for better visibility */
+            color: #fff; /* Set text color to white for better contrast */
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
         .curriculum-wrapper {
             margin-top: 20px;
             text-align: center;
@@ -76,15 +87,60 @@
             width: 80%;
             height: 500px;
         }
+        #select-curriculum {
+            padding: 8px;
+        }
 
         .footer {
             text-align: center;
             padding: 20px;
         }
+
+        @media only screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .text-container,
+            .image-container {
+                width: 100%;
+                padding: 0;
+            }
+
+            .image-container {
+                margin-top: 20px;
+            }
+
+            .menu-options {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .menu-options div {
+                padding: 1.5em;
+                margin-bottom: 20px;
+            }
+
+            .menu-options img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .curriculum-wrapper embed {
+                width: 100%;
+                height: 400px;
+            }
+            #installments-section {
+                margin-top: 0; /* Remove top margin on mobile for better spacing */
+            }
+        }
+
     </style>
 </head>
 
 <body>
+    <div><br /><a href="index.html"><<< Back to homepage</a></div>
     <div class="container">
         <!-- Left Container for Text -->
         <div class="text-container fade-in">
@@ -102,43 +158,62 @@
 
         <!-- Right Container for Image -->
         <div class="image-container fade-in">
-            <img src="fash_tech22.png" alt="TechCurious Image">
+            <img src="techcurious.png" alt="TechCurious Image">
         </div>
     </div>
 
     <!-- Menu Options Section -->
     <div class="menu-options fade-in">
-        <div onclick="showCurriculum('webdev_curriculum.pdf')">
+        <div onclick="https://paystack.com/pay/techcuriousweb">
             <img src="webdev.png" alt="Web Development Logo">
             <h3>Web Development</h3>
             <p>Build elegant and responsive websites. Learn HTML, CSS, JavaScript, and popular frameworks like React and Bootstrap. Explore the fundamentals of web design and user experience.</p>
         </div>
-        <div onclick="showCurriculum('dataanalytics_curriculum.pdf')">
+        <div onclick="https://paystack.com/pay/techcuriousda">
             <img src="dataanalytics.png" alt="Data Analytics Logo">
             <h3>Data Analytics</h3>
             <p>Uncover actionable insights from massive datasets. Dive into data cleaning, analysis, and visualization using tools like Python, Pandas, NumPy, and Matplotlib. Gain skills in data-driven decision-making.</p>
         </div>
-        <div onclick="showCurriculum('machinelearning_curriculum.pdf')">
+        <div onclick="https://paystack.com/pay/techcuriousml">
             <img src="machinelearning.png" alt="Machine Learning Logo">
             <h3>Machine Learning</h3>
             <p>Build and deploy intelligent models. Explore machine learning algorithms, model training, and deployment. Use popular libraries like TensorFlow and scikit-learn. Understand the applications and ethics of AI.</p>
         </div>
     </div>
 
+    <div id = "installments-section" onclick = "https://paystack.com/pay/techcuriousinstallments">
+        <p>Techcurious for Monthly Installments</p>
+    </div>
+    
     <!-- Curriculum Section -->
     <div class="curriculum-wrapper">
         <h2>Curriculum Overview</h2>
+        <div>
+            <label for="select-curriculum">Select Curriculum:</label>
+            <select id="select-curriculum" onchange="showCurriculum(this.value)">
+                <option value="ds_curriculum.pdf">Data Science Curriculum</option>
+                <option value="web_curriculum.pdf">Web Development Curriculum</option>
+            </select>
+        </div><br />
         <div id="curriculum-container"></div>
     </div>
 
     <div class="footer">
-        <p>Copyright © 2024 TechCurious. All rights reserved.</p>
+        <p>Copyright © 2024<br />Oluwole Fasakin.</p>
     </div>
 
     <script>
         function showCurriculum(pdfPath) {
-            document.getElementById('curriculum-container').innerHTML = `<embed src="${pdfPath}" type="application/pdf" />`;
+            // Check if the selected PDF is allowed
+            const allowedPDFs = ["ds_curriculum.pdf", "web_curriculum.pdf"];
+            if (allowedPDFs.includes(pdfPath)) {
+                document.getElementById('curriculum-container').innerHTML = `<iframe src="${pdfPath}" width="100%" height="500px"></iframe>`;
+            } else {
+                alert("Sorry, you are not allowed to download this file.");
+            }
         }
+
+        showCurriculum("ds_curriculum.pdf");
     </script>
 </body>
 <script src="mijs.js"></script>
