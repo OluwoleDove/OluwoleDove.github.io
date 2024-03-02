@@ -145,20 +145,20 @@ body {
     }
 
     .banner {
-       margin-bottom: -340px;
+       margin-top: 20px;
+       margin-bottom: -320px;
     }
 
     .banner::before {
-        background-size: contain;
         background-position: center/cover no-repeat;
         width: 100%;
         height: 20vh;
+        padding: 20px 0 0 0;
     }
 
     .banner h1 {
         font-size: 1.2em;
         font-weight: 600;
-        margin-bottom: 10px;
     }
 
     .banner h1 span{
