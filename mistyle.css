@@ -2,6 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0 auto;
     width: 95%;
+    padding: 1em;
     background-color: #f9f9f9;
 }
 
@@ -23,7 +24,6 @@ body {
     width: 100%;
     height: 100%;
     background: url('banner.jpg') center/cover no-repeat;
-    background-color: rgba(0, 0, 0, 0.7);
     z-index: -1; /* Ensure the overlay is behind the content */
 }
 
@@ -32,6 +32,11 @@ body {
     font-weight: 800;
     padding: 1em 0.2em;
     transition: all 0.3s ease; /* Add a transition effect */
+}
+
+.banner h1 span{
+    font-size: 0.9em;
+    font-weight: 500;
 }
 
 /* Additional styles for better visibility of text */
@@ -132,9 +137,26 @@ body {
     margin-right: 5px;
 }
 
-@media only screen and (min-width: 600px) {
-    body {
-        padding: 1em;
+@media only screen and (max-width: 600px) {
+    .banner {
+       margin-bottom: -450px;
+    }
+
+    .banner::before {
+        background-size: contain;
+        background-position: center;
+        height: 20vh;
+    }
+
+    .banner h1 {
+        font-size: 1.2em;
+        font-weight: 600;
+        padding: 0.5em 0.1em;
+        margin-bottom: 10px;
+    }
+
+    .banner h1 span{
+        font-size: 0.8em;
     }
 
     .section {
@@ -149,9 +171,7 @@ body {
     .list {
         width: 48%;
     }
-}
 
-@media only screen and (max-width: 600px) {
     .section img {
         width: 100%;
         margin-bottom: 10px;
