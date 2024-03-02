@@ -1,0 +1,159 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto;
+    width: 95%;
+    background-color: #f9f9f9;
+}
+
+.banner {
+    position: relative;
+    text-align: right;
+    color: #fff;
+    padding: 50px;
+    margin-bottom: 20px;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('banner.jpg') center/cover no-repeat;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1; /* Ensure the overlay is behind the content */
+}
+
+.banner h1 {
+    font-size: 3em;
+    font-weight: 800;
+    padding: 1em 0.2em;
+    transition: all 0.3s ease; /* Add a transition effect */
+}
+
+/* Additional styles for better visibility of text */
+.banner h1::after {
+    content: ""; /* Add a pseudo-element for better text visibility */
+    display: block;
+    clear: both;
+}
+
+.header, .footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5em;
+    align-items: flex-start;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+}
+
+.section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skill_title{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.initiatives-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.initiative {
+    text-align: center;
+    width: 48%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease-in-out;
+}
+
+.initiative:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.contact-info {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.header {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.list-item {
+    margin: 1em 0;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.fas {
+    margin-right: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        padding: 1em;
+    }
+
+    .section {
+        justify-content: space-between;
+    }
+
+    .section img {
+        width: 48%;
+        margin-right: 2%;
+    }
+
+    .list {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .list {
+        width: 100%;
+    }
+
+    .initiative {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
