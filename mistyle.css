@@ -84,6 +84,8 @@ body {
 
 .initiatives-section {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 30px 0;
 }
