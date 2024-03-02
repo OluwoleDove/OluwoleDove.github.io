@@ -4,6 +4,7 @@ body {
     width: 95%;
     padding: 1em;
     background-color: #f9f9f9;
+    color: #1f1d1d;
 }
 
 .banner {
@@ -57,13 +58,19 @@ body {
 .section {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 1.5em;
+    justify-content: space-around;
+    flex-direction: row;
     align-items: flex-start;
     border-bottom: 1px solid #eee;
     padding-bottom: 20px;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+}
+
+.section img {
+    width: 48%; /* Adjust the width of images for larger screens */
+    margin-right: 2%; /* Add margin between images for larger screens */
 }
 
 .section.fade-in {
@@ -78,21 +85,23 @@ body {
 
 .list {
     list-style: none;
+    width: 48%;
     padding: 0;
     margin: 0;
 }
 
 .initiatives-section {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     margin: 30px 0;
 }
 
 .initiative {
     text-align: center;
-    width: 48%;
+    width: 45%;
     padding: 20px;
     border: 1px solid #ddd;
     transition: transform 0.3s ease-in-out;
@@ -119,6 +128,7 @@ body {
 
 .list-item {
     margin: 1em 0;
+    text-align: left;
 }
 
 .collabs a{
@@ -131,7 +141,7 @@ body {
 }
 
 .section img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
 
@@ -166,25 +176,17 @@ body {
     }
 
     .section {
-        justify-content: space-between;
+        flex-direction: column; /* Stack items on top of each other for smaller screens */
+        align-items: center; /* Center items for smaller screens */
     }
 
     .section img {
-        width: 48%;
-        margin-right: 2%;
+        width: 100%; /* Make images take full width on smaller screens */
+        margin-right: 0; /* Remove margin for images on smaller screens */
     }
 
     .list {
-        width: 48%;
-    }
-
-    .section img {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .list {
-        width: 100%;
+        width: 100%; /* Make lists take full width on smaller screens */
     }
 
     .initiative {
