@@ -172,7 +172,7 @@
 
         <!-- Right Container for Image -->
         <div class="image-container fade-in">
-            <img src="techcurious.png" alt="TechCurious Image">
+            <img src="img/techcurious.png" alt="TechCurious Image">
         </div>
     </div>
 
@@ -180,21 +180,21 @@
     <div class="menu-options fade-in">
         <div>
             <a href="https://paystack.com/pay/techcuriousweb">
-                <img src="web.jpg" alt="Techcurious' Web Development Program" />
+                <img src="img/web.jpg" alt="Techcurious' Web Development Program" />
                 <h3>Web Development</h3>
                 <p>Build elegant and responsive websites. Learn HTML, CSS, JavaScript, and popular frameworks like React and Bootstrap. Explore the fundamentals of web design and user experience.</p>
             </a>
         </div>
         <div>
             <a href="http://paystack.com/pay/techcuriousda">
-                <img src="da.jpg" alt="Techcurious' Data Analytics Program" />
+                <img src="img/da.jpg" alt="Techcurious' Data Analytics Program" />
                 <h3>Data Analytics</h3>
                 <p>Uncover actionable insights from massive datasets. Dive into data cleaning, analysis, and visualization using tools like Python, Pandas, NumPy, and Matplotlib. Gain skills in data-driven decision-making.</p>
             </a>
         </div>
         <div>
             <a href="https://paystack.com/pay/techcuriousml">
-                <img src="ml.jpg" alt="Techcurious' Machine Learning Program" />
+                <img src="img/ml.jpg" alt="Techcurious' Machine Learning Program" />
                 <h3>Machine Learning</h3>
                 <p>Build and deploy intelligent models. Explore machine learning algorithms, model training, and deployment. Use popular libraries like TensorFlow and scikit-learn. Understand the applications and ethics of AI.</p>
             </a>
@@ -207,7 +207,7 @@
 
     <h2 class="header">Techcurious for Corporate Needs</h2>
     <div class="section fade-in">
-        <img src="network.jpg" alt="The convener of Techcurious">
+        <img src="img/network.jpg" alt="The convener of Techcurious">
         <div class="list">
             <p>Do you manage a firm or school, and would love to equip your staff or student with up-to-date tech skills?
             There's massivr discount for you</p>
@@ -225,8 +225,8 @@
         <div>
             <label for="select-curriculum">Select Curriculum:</label>
             <select id="select-curriculum" onchange="showCurriculum(this.value)">
-                <option value="ds_curriculum.pdf">Data Science Curriculum</option>
-                <option value="web_curriculum.pdf">Web Development Curriculum</option>
+                <option value="files/ds_curriculum.pdf">Data Science Curriculum</option>
+                <option value="files/web_curriculum.pdf">Web Development Curriculum</option>
             </select>
         </div><br />
         <div id="curriculum-container"></div>
@@ -239,17 +239,17 @@
     <script>
         function showCurriculum(pdfPath) {
             // Check if the selected PDF is allowed
-            const allowedPDFs = ["ds_curriculum.pdf", "web_curriculum.pdf"];
+            const allowedPDFs = ["files/ds_curriculum.pdf", "files/web_curriculum.pdf"];
             if (allowedPDFs.includes(pdfPath)) {
                 document.getElementById('curriculum-container').innerHTML = `<iframe src="${pdfPath}" width="100%" height="500px"></iframe>`;
-            } else {
-                alert("Sorry, you are not allowed to download this file.");
-            }
+            } 
         }
 
-        showCurriculum("ds_curriculum.pdf");
+        document.addEventListener("DOMContentLoaded", function() {
+            showCurriculum("files/ds_curriculum.pdf");
+        });
     </script>
 </body>
-<script src="mijs.js"></script>
+<script src="img/mijs.js"></script>
 
 </html>
