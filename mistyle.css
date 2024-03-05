@@ -157,20 +157,18 @@ body {
     }
 
     .banner {
-       margin-top: 20px;
-       margin-bottom: -320px;
+       
     }
 
     .banner::before {
-        background-position: center/cover no-repeat;
+        background: url('img/banner_mobile.jpg') center/cover no-repeat;
         width: 100%;
-        height: 20vh;
+        height: 70vh;
         padding: 20px 0 0 0;
     }
 
     .banner h1 {
-        font-size: 1.2em;
-        font-weight: 600;
+        display: none;
     }
 
     .banner h1 span{
