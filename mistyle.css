@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0 auto;
-    width: 95%;
+    width: 90%;
     padding: 1em;
     background-color: #f9f9f9;
     color: #1f1d1d;
@@ -133,6 +133,7 @@ body {
 
 .collabs a{
     text-decoration: none;
+    color: #1f1d1d;
 }
 
 .collabs:hover{
@@ -152,6 +153,7 @@ body {
 @media only screen and (max-width: 600px) {
     body{
         padding: 0;
+        width: 100%;
     }
 
     .banner {
