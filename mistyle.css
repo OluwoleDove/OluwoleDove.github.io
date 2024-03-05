@@ -156,10 +156,6 @@ body {
         width: 100%;
     }
 
-    .banner {
-       
-    }
-
     .banner::before {
         background: url('img/banner_mobile.jpg') center/cover no-repeat;
         width: 100%;
@@ -176,13 +172,14 @@ body {
     }
 
     .section {
-        flex-direction: column; /* Stack items on top of each other for smaller screens */
-        align-items: center; /* Center items for smaller screens */
+        flex-direction: column;
+        align-items: center;
+        padding: 12px;
     }
 
     .section img {
-        width: 100%; /* Make images take full width on smaller screens */
-        margin-right: 0; /* Remove margin for images on smaller screens */
+        min-width: 100%;
+        margin-right: 0;
     }
 
     .list {
