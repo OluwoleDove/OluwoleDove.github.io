@@ -1,3 +1,8 @@
+window.onload = function() {
+    document.querySelector(".banner h1").style.right = "0";
+};
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll(".slide-up");
 

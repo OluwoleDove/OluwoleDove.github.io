@@ -1,8 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0 auto;
-    width: 90%;
-    padding: 1em;
+    padding: 0 1em;
     background-color: #f9f9f9;
     color: #1f1d1d;
     line-height: 1.5;
@@ -15,7 +14,7 @@ body {
     color: #fff;
     padding: 50px;
     margin-bottom: 20px;
-    height: 60vh;
+    height: 80vh;
     overflow: hidden;
 }
 
@@ -24,18 +23,21 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    min-width: 100%;
     height: 100%;
     background: url('img/banner.jpg') center/cover no-repeat;
     z-index: -1; /* Ensure the overlay is behind the content */
 }
 
 .banner h1 {
+    /* Existing styles */
     font-size: 3em;
     font-weight: 800;
-    padding: 1em 0.2em;
-    transition: all 0.3s ease; /* Add a transition effect */
-}
+    padding: 2em 0.2em;
+    transition: all 1s ease; /* Add a transition effect */
+    position: absolute; /* Make it absolute for positioning */
+    right: -100%; /* Start off-screen to the right */
+  }
 
 .banner h1 span{
     font-size: 0.9em;
@@ -47,6 +49,11 @@ body {
     content: ""; /* Add a pseudo-element for better text visibility */
     display: block;
     clear: both;
+}
+
+div, h2{
+    width: 90%;
+    margin: 0 auto;
 }
 
 .header, .footer {
