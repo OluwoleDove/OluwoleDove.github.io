@@ -49,9 +49,9 @@ body {
 
 .header, .footer {
     text-align: center;
-    background-color: #333;
+    background-color: #131212;
     color: #fff;
-    padding: 10px;
+    padding: 30px;
     margin-bottom: 20px;
 }
 
@@ -149,6 +149,18 @@ body {
 .fas {
     margin-right: 5px;
 }
+
+
+.slide-up {
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+}
+
 
 @media only screen and (max-width: 600px) {
     body{
