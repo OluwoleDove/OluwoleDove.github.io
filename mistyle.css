@@ -199,7 +199,6 @@ i {
     transform: translateY(0) translateX(0);
 }
 
-
 @media only screen and (max-width: 600px) {
     body{
         padding: 0;

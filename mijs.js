@@ -1,5 +1,6 @@
 window.onload = function() {
     document.querySelector(".banner h1").style.right = "0";
+    new GitHubCalendar(".calendar", "OluwoleDove");
 };
 
 
