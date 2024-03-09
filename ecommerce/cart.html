@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      margin: 5px; /* Added margin */
+    }
+
+    .button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+  
+<body>
+  <header style="min-height: 20vh;">
+    <div style="margin: 2em;">
+      <button onclick="clearCart()" style="padding: 1em; float: right;">Clear Cart</button>
+    </div>
+  </header>>
+  
+  <div class="container">
+    <div id="cart-items" class="cart-container">
+      <!-- Cart items will be dynamically added here -->
+    </div><br />
+    <div id="total-price"></div> <br /><br />
+    <a href="index.html" class="button">Add item to cart</a>
+    <a href="checkout.html" class="button">Proceed to Checkout</a><br />
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
