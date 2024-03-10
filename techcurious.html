@@ -82,13 +82,12 @@
         }
 
         #installments-section {
-            width: inherit;
             font-size: 1.5em;
             font-weight: 700;
             text-align: center;
             padding: 20px;
-            background-color: #3498db; /* Add a background color for better visibility */
-            color: #fff; /* Set text color to white for better contrast */
+            background-color: #ffffff; /* Add a background color for better visibility */
+            color: #201f1f; /* Set text color to white for better contrast */
             cursor: pointer;
             margin-top: 20px;
         }
@@ -104,6 +103,23 @@
         }
         #select-curriculum {
             padding: 8px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border: #fff;
+        }
+
+        .table-label {
+            padding: 8px 0;
+            color: #555;
+            font-weight: bold;
+        }
+
+        table td {
+            padding: 8px 10px;
+            text-align: left;
         }
 
         .footer {
@@ -183,6 +199,16 @@
                 <img src="img/web.jpg" alt="Techcurious' Web Development Program" />
                 <h3>Web Development</h3>
                 <p>Build elegant and responsive websites. Learn HTML, CSS, JavaScript, and popular frameworks like React and Bootstrap. Explore the fundamentals of web design and user experience.</p>
+                <table>
+                    <tr>
+                        <td class="table-label">Duration</td>
+                        <td>6 months</td>
+                    </tr>
+                    <tr>
+                        <td class="table-label">Cost</td>
+                        <td>300,000 NGN</td>
+                    </tr>
+                </table>
             </a>
         </div>
         <div>
@@ -190,6 +216,16 @@
                 <img src="img/da.jpg" alt="Techcurious' Data Analytics Program" />
                 <h3>Data Analytics</h3>
                 <p>Uncover actionable insights from massive datasets. Dive into data cleaning, analysis, and visualization using tools like Python, Pandas, NumPy, and Matplotlib. Gain skills in data-driven decision-making.</p>
+                <table>
+                    <tr>
+                        <td class="table-label">Duration</td>
+                        <td>4 months</td>
+                    </tr>
+                    <tr>
+                        <td class="table-label">Cost</td>
+                        <td>240,000 NGN</td>
+                    </tr>
+                </table>
             </a>
         </div>
         <div>
@@ -197,13 +233,24 @@
                 <img src="img/ml.jpg" alt="Techcurious' Machine Learning Program" />
                 <h3>Machine Learning</h3>
                 <p>Build and deploy intelligent models. Explore machine learning algorithms, model training, and deployment. Use popular libraries like TensorFlow and scikit-learn. Understand the applications and ethics of AI.</p>
+                <table>
+                    <tr>
+                        <td class="table-label">Duration</td>
+                        <td>8 months</td>
+                    </tr>
+                    <tr>
+                        <td class="table-label">Cost</td>
+                        <td>450,000 NGN</td>
+                    </tr>
+                </table>
             </a>
         </div>
     </div>
 
     <div id = "installments-section" onclick = "https://paystack.com/pay/techcuriousinstallments">
         <p>Techcurious for Monthly Installments</p>
-    </div>
+        <p></p>
+    </div><br />
 
     <h2 class="header">Techcurious for Corporate Needs</h2>
     <div class="section fade-in">
@@ -214,7 +261,8 @@
             <ul>
                 <li class="list-item"><i class="fas fa-users"></i> 10 trainees: 10% discount</li>
                 <li class="list-item"><i class="fas fa-users"></i> 25 trainees: 15% discount</li>
-                <li class="list-item"><i class="fas fa-users"></i> 50 trainees and above: 20% discount</li>
+                <li class="list-item"><i class="fas fa-users"></i> 50 trainees: 20% discount</li>
+                <li class="list-item"><i class="fas fa-users"></i> Above 50 trainees: Send a Message</li>
             </ul>
         </div>
     </div>
