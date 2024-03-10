@@ -2,86 +2,107 @@ const clothingData = [
     { 
       imgSrc: "img/elliptical_trainer.png", 
       name: "Elliptical Trainer", 
-      price: "€ 50.99", 
+      price: "$ 299.99", 
       gender: "Unisex", 
       color: "rosybrown" 
     },
     { 
-      imgSrc: "img/foam_roller.png", 
-      name: "Foam Roller", 
-      price: "€ 50.99", 
+      imgSrc: "img/threadmill.png", 
+      name: "Threadmill", 
+      price: "$ 359.99", 
       gender: "Unisex", 
       color: "#e3e3ef" 
     },
     { 
       imgSrc: "img/dip_bar1.png", 
       name: "Dip Bar", 
-      price: "€ 49.99", 
+      price: "$ 49.99", 
       gender: "Unisex", 
       color: "#000" 
     },
     { 
-      imgSrc: "img/pants.jpg", 
-      name: "Men's Pant", 
-      price: "€ 30.49", 
+      imgSrc: "img/kettlebell.png", 
+      name: "Kettlebell Weight", 
+      price: "$ 30.49", 
       gender: "Male", 
       color: "darkgrey" 
     },
     { 
-      imgSrc: "img/trouser-folded.jpg", 
-      name: "Men's Pant", 
-      price: "€ 35.99", 
+      imgSrc: "img/elliptical_trainer2.png", 
+      name: "Elliptical Trainer", 
+      price: "$ 239.99", 
       gender: "Male", 
       color: "sandybrown" 
     },
     { 
-      imgSrc: "img/winter-dark.jpg", 
-      name: "Winter Jacket", 
-      price: "€ 65.49", 
+      imgSrc: "img/stabilityball2.png", 
+      name: "Stability Ball", 
+      price: "$ 65.49", 
       gender: "Unisex", 
       color: "powderblue" 
     },
     { 
-      imgSrc: "img/winter-light.jpg", 
-      name: "Winter Jacket", 
-      price: "€ 65.49", 
+      imgSrc: "img/foam_roller.png", 
+      name: "Foam Roller", 
+      price: "$ 65.49", 
       gender: "Unisex", 
       color: "#e3e3ef" 
     },
     { 
-      imgSrc: "img/jean-hoodie.jpg", 
-      name: "Hoodie (Jean)", 
-      price: "€ 105.99", 
+      imgSrc: "img/kettlebell2.png", 
+      name: "Kettlebell", 
+      price: "$ 105.99", 
       gender: "Unisex", 
       color: "powderblue" 
     },
     { 
-      imgSrc: "img/jean-light.jpg", 
-      name: "Jean", 
-      price: "€ 95.99", 
+      imgSrc: "img/multifunction2.png", 
+      name: "Multifunctional Gym Machine", 
+      price: "$ 375.99", 
+      gender: "Female", 
+      color: "deeppink" 
+    },
+    { 
+      imgSrc: "img/stabilityball.png", 
+      name: "Stability Ball", 
+      price: "$ 95.99", 
       gender: "Male", 
       color: "lightblue" 
     },
     { 
-      imgSrc: "img/jean-blue.jpg", 
-      name: "Jean", 
-      price: "€ 95.99", 
+      imgSrc: "img/dip_bar2.png", 
+      name: "Dip Bar", 
+      price: "$ 154.99", 
       gender: "Male", 
       color: "blue" 
     },
     { 
-      imgSrc: "img/dress-blue.jpg", 
-      name: "Dress", 
-      price: "€ 75.99", 
+      imgSrc: "img/weightbench.png", 
+      name: "Foldable Bench Press", 
+      price: "$ 75.99", 
       gender: "Female", 
       color: "cyan" 
     },
     { 
-      imgSrc: "img/dress-pink.jpg", 
-      name: "Dress", 
-      price: "€ 75.99", 
+      imgSrc: "img/pushup_bar.png", 
+      name: "Push-up Bar", 
+      price: "$ 75.99", 
       gender: "Female", 
       color: "deeppink" 
+    },
+    { 
+      imgSrc: "img/dumbbell.png", 
+      name: "Dumbbell", 
+      price: "$ 154.99", 
+      gender: "Male", 
+      color: "blue" 
+    },
+    { 
+      imgSrc: "img/multifunctional.png", 
+      name: "Multifunctional Smith Machine", 
+      price: "$ 375.99", 
+      gender: "Female", 
+      color: "cyan" 
     }
     // Add more clothing items as needed
   ];

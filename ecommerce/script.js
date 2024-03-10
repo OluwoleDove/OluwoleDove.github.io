@@ -1,10 +1,8 @@
-// script.js
-
 // Function to add an item to the cart
 function addItemToCart(clickedItem) {
     const itemDiv = clickedItem.parentNode;
     const itemName = itemDiv.querySelector('h3').textContent;
-    const itemPrice = parseFloat(itemDiv.querySelector('p').textContent.replace('€ ', ''));
+    const itemPrice = parseFloat(itemDiv.querySelector('p').textContent.replace('$ ', ''));
     const itemImage = itemDiv.querySelector('img').src;
   
     const item = {
@@ -48,7 +46,7 @@ function addItemToCart(clickedItem) {
   
       const itemPrice = document.createElement('p');
       const singleItemPrice = item.price * (item.quantity || 1);
-      itemPrice.textContent = `€ ${singleItemPrice.toFixed(2)}`;
+      itemPrice.textContent = `$ ${singleItemPrice.toFixed(2)}`;
   
       const quantityDiv = document.createElement('div');
       quantityDiv.classList.add('quantity');
@@ -75,7 +73,7 @@ function addItemToCart(clickedItem) {
       totalPrice += singleItemPrice; // Update total price for each item
     });
   
-    totalPriceDiv.textContent = `Total Price: € ${totalPrice.toFixed(2)}`;
+    totalPriceDiv.textContent = `Total Price: $ ${totalPrice.toFixed(2)}`;
   }
   
   
@@ -96,7 +94,7 @@ function addItemToCart(clickedItem) {
   
   function updateItemPrice(item, itemPriceElement, totalPriceDiv) {
     // Update the item price based on quantity
-    itemPriceElement.textContent = `€ ${(item.price * (item.quantity || 1)).toFixed(2)}`;
+    itemPriceElement.textContent = `$ ${(item.price * (item.quantity || 1)).toFixed(2)}`;
   
     // Recalculate total price and update the total price display
     let totalPrice = 0;
@@ -104,7 +102,7 @@ function addItemToCart(clickedItem) {
     cartItems.forEach(cartItem => {
       totalPrice += cartItem.price * (cartItem.quantity || 1);
     });
-    totalPriceDiv.textContent = `Total Price: € ${totalPrice.toFixed(2)}`;
+    totalPriceDiv.textContent = `Total Price: $ ${totalPrice.toFixed(2)}`;
   }
   
   function clearCart() {
@@ -134,7 +132,7 @@ function addItemToCart(clickedItem) {
       totalPrice += itemTotalPrice;
   
       const itemPrice = document.createElement('p');
-      itemPrice.textContent = `Price: € ${itemTotalPrice.toFixed(2)}`;
+      itemPrice.textContent = `Price: $ ${itemTotalPrice.toFixed(2)}`;
   
       itemSummary.appendChild(itemName);
       itemSummary.appendChild(itemQuantity);
@@ -153,7 +151,7 @@ function addItemToCart(clickedItem) {
     };
   
     const totalPriceElement = document.createElement('h3');
-    totalPriceElement.textContent = `Total Price: € ${totalPrice.toFixed(2)}`;
+    totalPriceElement.textContent = `Total Price: $ ${totalPrice.toFixed(2)}`;
   
     summaryDiv.appendChild(totalPriceElement);
     summaryDiv.appendChild(proceedButton);
