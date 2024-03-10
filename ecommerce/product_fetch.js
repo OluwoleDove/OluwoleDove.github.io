@@ -1,21 +1,21 @@
 const clothingData = [
     { 
-      imgSrc: "img/turtle-beige.jpg", 
-      name: "Turtle Neck", 
+      imgSrc: "img/elliptical_trainer.png", 
+      name: "Elliptical Trainer", 
       price: "€ 50.99", 
       gender: "Unisex", 
       color: "rosybrown" 
     },
     { 
-      imgSrc: "img/turtle-white-female.jpg", 
-      name: "Turtle Neck", 
+      imgSrc: "img/foam_roller.png", 
+      name: "Foam Roller", 
       price: "€ 50.99", 
       gender: "Unisex", 
       color: "#e3e3ef" 
     },
     { 
-      imgSrc: "img/turtle-black.jpg", 
-      name: "Turtle Neck", 
+      imgSrc: "img/dip_bar1.png", 
+      name: "Dip Bar", 
       price: "€ 49.99", 
       gender: "Unisex", 
       color: "#000" 
