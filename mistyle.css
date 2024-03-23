@@ -206,7 +206,7 @@ i {
     }
 
     .banner::before {
-        background: url('img/banner_mobile.jpg') center/cover no-repeat;
+        background: url('img/banner_mobile_one.jpg') center/cover no-repeat;
         width: 100%;
         height: 70vh;
         padding: 20px 0 0 0;
