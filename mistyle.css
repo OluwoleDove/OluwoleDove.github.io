@@ -220,6 +220,10 @@ i {
         font-size: 0.8em;
     }
 
+    .first_section{
+        margin-top: -100px;
+    }
+
     .section {
         flex-direction: column;
         align-items: center;
