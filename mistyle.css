@@ -221,7 +221,7 @@ i {
     }
 
     .first_section{
-        margin-top: -100px;
+        margin-top: -200px;
     }
 
     .section {
@@ -241,6 +241,6 @@ i {
 
     .initiative {
         width: 100%;
-        margin-bottom: 20px;
+        margin: 20px 40px;
     }
 }
