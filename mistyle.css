@@ -100,6 +100,12 @@ td a {
     font-size: 18px; /* Increase the font size */
     display: block;
     line-height: 1.5; /* Adjust line height for better spacing */
+    margin: 50px 0;
+}
+
+td span {
+    font-size: 20px;
+    line-height: 2;
 }
 
 td a:hover {
@@ -108,7 +114,7 @@ td a:hover {
 }
 
 i {
-    font-size: 30px; 
+    font-size: 5em; 
 }
 
 .section img {
