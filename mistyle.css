@@ -77,6 +77,11 @@ div, h2{
     transition: opacity 2s ease-in-out, transform 2s ease-in-out;
 }
 
+.first_section{
+    text-align: center;
+    padding: 1em 0.2em;
+}
+
 table {
     border-collapse: collapse;
     width: 100%;
@@ -222,6 +227,7 @@ i {
 
     .first_section{
         margin-top: -200px;
+        font-size: 12px;
     }
 
     .section {
