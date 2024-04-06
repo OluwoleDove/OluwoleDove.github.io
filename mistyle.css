@@ -114,6 +114,10 @@ td a:hover {
 }
 
 i {
+    font-size: 3em;
+}
+
+td i {
     font-size: 5em; 
 }
 
