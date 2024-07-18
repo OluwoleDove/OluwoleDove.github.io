@@ -43,27 +43,27 @@
         <h3>Category</h3>
         <select id="category" onchange="filterProducts()">
           <option value="all">All</option>
-          <option value="lightweight">Light Weight</option>
-          <option value="lightweight">Medium Weight</option>
-          <option value="lightweight">Heavy Weight</option>
+          <option value="Light Weight">Light Weight</option>
+          <option value="Medium Weight">Medium Weight</option>
+          <option value="Heavy Weight">Heavy Weight</option>
           <!-- Add more categories as needed -->
         </select>
         
         <h3>Price Range</h3>
         <input type="range" id="priceRange" min="0" max="500" step="10" oninput="updatePriceLabel(this.value)" onchange="filterProducts()">
-        <label id="priceLabel">Up to €500</label>
+        <label id="priceLabel">Up to $500</label>
         
-        <h3>Brands</h3>
+        <h3>Colors</h3>
         <label>
-          <input type="checkbox" value="heavyweight" onchange="filterProducts()"> Heavy Weight
+          <input type="checkbox" value="rosybrown" onchange="filterProducts()"> Rosybrown
         </label>
         <label>
-          <input type="checkbox" value="mediumweight" onchange="filterProducts()"> Medium Weight
+          <input type="checkbox" value="#e3e3ef" onchange="filterProducts()"> Light Gray
         </label>
         <label>
-          <input type="checkbox" value="lightweight" onchange="filterProducts()"> Light Weight
+          <input type="checkbox" value="#000" onchange="filterProducts()"> Black
         </label>
-        <!-- Add more brands as needed -->
+        <!-- Add more colors as needed -->
       </aside>
       
       <!-- Main content -->
@@ -87,7 +87,7 @@
           <div class="sale-item">
             <img src="img/multifunction2.png" alt="Sale 1">
             <h3>Black Friday</h3>
-            <p>Discounted Price: € 259.99</p>
+            <p>Discounted Price: $ 259.99</p>
             <a href="#" class="btn" onclick="addItemToCart(this)">Shop Now</a>
           </div>
           <!-- Add more sale items -->
@@ -117,67 +117,5 @@
 
   <script src="script.js"></script>
   <script src="product_fetch.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      filterProducts();
-    });
-
-    function filterProducts() {
-      // Get filter values
-      const search = document.getElementById('search').value.toLowerCase();
-      const category = document.getElementById('category').value;
-      const priceRange = document.getElementById('priceRange').value;
-      const brands = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value);
-
-      // Fetch and filter products
-      const products = fetchProducts();
-
-      // Filter logic
-      const filteredProducts = products.filter(product => {
-        const matchesSearch = product.name.toLowerCase().includes(search);
-        const matchesCategory = category === 'all' || product.category === category;
-        const matchesPrice = product.price <= priceRange;
-        const matchesBrand = brands.length === 0 || brands.includes(product.brand);
-
-        return matchesSearch && matchesCategory && matchesPrice && matchesBrand;
-      });
-
-      // Update product display
-      displayProducts(filteredProducts);
-    }
-
-    function updatePriceLabel(value) {
-      document.getElementById('priceLabel').textContent = `Up to €${value}`;
-    }
-
-    function fetchProducts() {
-      // Placeholder for fetching products
-      // Replace this with actual product fetching logic
-      return [
-        { name: 'Product 1', category: 'equipment', price: 100, brand: 'brand1' },
-        { name: 'Product 2', category: 'clothing', price: 200, brand: 'brand2' },
-        // Add more products as needed
-      ];
-    }
-
-    function displayProducts(products) {
-      const clothesSection = document.getElementById('clothes');
-      clothesSection.innerHTML = '';
-      products.forEach(product => {
-        const productElement = document.createElement('div');
-        productElement.className = 'clothing-card';
-        productElement.innerHTML = `
-          <img src="img/product.jpg" alt="${product.name}">
-          <h3>${product.name}</h3>
-          <p>Price: €${product.price}</p>
-        `;
-        clothesSection.appendChild(productElement);
-      });
-    }
-
-    // Initial display
-    filterProducts();
-
-  </script>
 </body>
 </html>
