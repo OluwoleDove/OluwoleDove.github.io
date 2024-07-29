@@ -4,125 +4,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "description" content = "Data Scientist and Developer in Port-Harcourt, Nigeria" />
-    <meta name = "keywords" content = "data, data, science, professional, developer, ecommerce, elearning, machine, learning, web, software, engineer">
-    <meta property="og:url"           content="https://oluwoledove.github.io" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:description"   content="Business Intelligence | Data Science | Product Development" />
-    <meta property="og:image"         content="https://oluwoledove.github.io/img/banner_mobile.jpg" />
+    <meta name="description" content="Data Scientist and Developer in Port-Harcourt, Nigeria" />
+    <meta name="keywords" content="data, data, science, professional, developer, ecommerce, elearning, machine, learning, web, software, engineer">
+    <meta property="og:url" content="https://oluwoledove.github.io" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Business Intelligence | Data Science | Product Development" />
+    <meta property="og:image" content="https://oluwoledove.github.io/img/banner_mobile.jpg" />
     <title>Oluwole Fasakin | Data-Driven Professional</title>
-    <link href="https://fonts.googleapis.com/css2?family=Uniform+Rounded:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="stylesheet" href="mistyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .banner {
+            color: #2b2828;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .banner h1 {
+            font-size: 10em;
+            font-weight: 800;
+        }
+
+        .banner h2 {
+            font-size: 2em;
+            font-weight: 500;
+        }
+
+        .section {
+            padding: 40px 20px;
+        }
+
+        .header, .footer {
+            text-align: center;
+            background-color: #949699;
+            color: #2b2828;
+            padding: 20px 0;
+        }
+
+        .header h2, .footer p {
+            margin: 0;
+        }
+
+        .card-content a {
+            color: #242627;
+            text-decoration: none;
+        }
+
+        .card-content a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin: 0 0 10px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .banner {
+                height: 60vh;
+            }
+
+            .banner h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="banner">
-        <h1>Data-Driven Professional<br /><span style="font-size: 0.7em;">Enabling Insightful Business Decisions</span></h1>
-    </div>
-
-    <div class="section fade-in first_section">
-        <h1><strong style="font-weight:800;">OLUWOLE FASAKIN</strong></h1>
-        <h2>Data Science  |  Web Development  |  Business Intelligence</h2>
-    </div>
-
-    <h2 class="header">WEB SOLUTIONS</h2>
-    <div class="section fade-in">
-        <ul class="list">
-            <li class="list-item slide-up">
-                
-                <table>
-                    <tr>
-                        <td><a href="ecommerce/home.html"><i class="fas fa-globe"></i><br /><span>Website</span></a></td>
-                        <td><a href="https://www.witslens.com"><i class="fas fa-school"></i><br /><span>e-learning</span></a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="ecommerce/home.html"><i class="fas fa-cart-shopping"></i><br /><span>e-commerce</span></a></td>
-                        <td><a href="https://www.witslens.com/trial.php"><i class="fas fa-users"></i><br /><span>Forums</span></a></td>
-                    </tr>
-                </table>              
-            </li>
-
-        </ul>
-        <img src="img/fash_wits.png" id="image1" alt="The creator of Witslens">
-    </div>
-    
-    <h2 class="header">INITIATIVES</h2>
-    <div class="initiatives-section slide-up">
-        <div class="initiative fade-in" onclick="window.location.href='https://www.witslens.com'">
-            <img src="img/witslens.png" alt="WitsLens Logo" style="width: 100px; height: 100px; object-fit: contain;">
-            <h3>Witslens</h3>
-            <p>Exploring learning through a clear lens.</p>
-        </div>
-        
-        <div class="initiative fade-in" onclick="window.location.href='techcurious.html'">
-            <img src="img/techcurious.png" alt="TechCurious Logo" style="width: 100px; height: 100px; object-fit: contain;">
-            <h3>TechCurious</h3>
-            <p>Answering your spoken and unspoken technology curiosity.</p>
+        <div>
+            <h1><strong>Oluwole Fasakin</strong></h1>
+            <h2>DATA SCIENCE | WEB DEVELOPMENT | BUSINESS INTELLIGENCE</h2>
         </div>
     </div>
 
-    <h2 class="header fade-in">PREVIOUS COLLABORATIONS</h2>
-    <div id= "slideUpSection">
-        <ul class="list slide-up">
-            <li class="list-item collabs"><a href="https://tvalton.com/"><i class="fas fa-building"></i> TValton Services Nigeria Limited</a></li>
-            <li class="list-item collabs"><a href="https://tequant.ng/"><i class="fas fa-building"></i> Te Quant</a></li>
+    <div class="header">
+        <h2>Web Solutions</h2>
+    </div>
+    <div class="section">
+        <div class="row">
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-content center-align">
+                        <a href="ecommerce/home.html"><i class="fas fa-globe fa-3x"></i><br /><span>Website</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-content center-align">
+                        <a href="https://www.witslens.com"><i class="fas fa-school fa-3x"></i><br /><span>e-learning</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-content center-align">
+                        <a href="ecommerce/home.html"><i class="fas fa-cart-shopping fa-3x"></i><br /><span>e-commerce</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-content center-align">
+                        <a href="https://www.witslens.com/trial.php"><i class="fas fa-users fa-3x"></i><br /><span>Forums</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <h2>Initiatives</h2>
+    </div>
+    <div class="section">
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card hoverable" onclick="window.location.href='https://www.witslens.com'">
+                    <div class="card-image">
+                        <img src="img/witslens.png" alt="WitsLens Logo" class="responsive-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Witslens</h3>
+                        <p>Exploring learning through a clear lens.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card hoverable" onclick="window.location.href='techcurious.html'">
+                    <div class="card-image">
+                        <img src="img/techcurious.png" alt="TechCurious Logo" class="responsive-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>TechCurious</h3>
+                        <p>Answering your spoken and unspoken technology curiosity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <h2>Previous Collaborations</h2>
+    </div>
+    <div class="section">
+        <ul class="collection">
+            <li class="collection-item"><a href="https://tvalton.com/" class="blue-text"><i class="fas fa-building"></i> TValton Services Nigeria Limited</a></li>
+            <li class="collection-item"><a href="https://tequant.ng/" class="blue-text"><i class="fas fa-building"></i> Te Quant</a></li>
         </ul>
     </div>
 
-    <h2 class="header">TOOLBELT OF EXPERTISE</h2>
-    <div class="section fade-in">
-        <img src="img/fash_tech.png" id="image2" alt="The convener of Techcurious">
-        <ul class="list">
-            <li class="list-item slide-up"><i class="fas fa-code"></i> <strong>Programming Languages</strong>
-                <ul><br />
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                    <li>PHP</li>
-                    <li>MySQL</li>
-                    <li>MongoDB</li>
+    <div class="header">
+        <h2>Toolbelt of Expertise</h2>
+    </div>
+    <div class="section">
+        <div class="row">
+            <div class="col s12 m4">
+                <ul class="collection">
+                    <li class="collection-item"><i class="fas fa-code"></i> <strong>Programming Languages</strong>
+                        <ul>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-            <li class="list-item fade-in"><i class="fas fa-cogs"></i> <strong>Libraries & Frameworks</strong>
-                <ul><br />
-                    <li>Bootstrap</li>
-                    <li>JQuery</li>
-                    <li>React</li>
-                    <li>NodeJS</li>
-                    <li>Express</li>
-                    <li>Numpy</li>
-                    <li>Pandas</li>
-                    <li>Scikit-learn</li>
+            </div>
+            <div class="col s12 m4">
+                <ul class="collection">
+                    <li class="collection-item"><i class="fas fa-cogs"></i> <strong>Libraries & Frameworks</strong>
+                        <ul>
+                            <li>Bootstrap</li>
+                            <li>JQuery</li>
+                            <li>React</li>
+                            <li>NodeJS</li>
+                            <li>Express</li>
+                            <li>Numpy</li>
+                            <li>Pandas</li>
+                            <li>Scikit-learn</li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-            <li class="list-item fade-in"><i class="fas fa-chart-bar"></i> <strong>Visualization and Data Analysis Tools</strong>
-                <ul><br />
-                    <li>Power BI</li>
-                    <li>Tableau</li>
-                    <li>Microsoft Excel</li>
-                    <li>Jupyter Note</li>
-                    <li>Anaconda</li>
-                    <li>Google Colab</li>
+            </div>
+            <div class="col s12 m4">
+                <ul class="collection">
+                    <li class="collection-item"><i class="fas fa-chart-bar"></i> <strong>Visualization and Data Analysis Tools</strong>
+                        <ul>
+                            <li>Power BI</li>
+                            <li>Tableau</li>
+                            <li>Microsoft Excel</li>
+                            <li>Jupyter Note</li>
+                            <li>Anaconda</li>
+                            <li>Google Colab</li>
+                        </ul>
+                    </li>
                 </ul>
-                
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 
-    <h2 class="header">OLUWOLE ON GITHUB</h2>
-    <div class="slide-up" style="display: flex; flex-wrap: wrap; justify-content: center; max-width: 100%;">
-        <br /><a href="https://github.com/OluwoleDove"><img src="img/github.jpg" alt="Oluwole Fasakin's Github chart" style="max-width: 100%; height: auto;"></a>
-    </div>    
-
-    <div class="contact-info">
-        <h2>CONTACT INFORMATION</h2>
-        <p><i class="fas fa-envelope"></i><br /> oluwolefasakin007@gmail.com</p>
+    <div class="header">
+        <h2>Oluwole on GitHub</h2>
+    </div>
+    <div class="section">
+        <div class="card">
+            <div class="card-image">
+                <a href="https://github.com/OluwoleDove"><img src="img/github.jpg" alt="Github Banner"></a>
+            </div>
+            <div class="card-content">
+                <p>Check out my projects and collaborations on GitHub.</p>
+            </div>
+        </div>
     </div>
 
     <div class="footer">
-        <p>&copy; 2024<br />Oluwole Fasakin</p>
+        <div class="contact-info">
+            <p>Email: oluwolefasakin007@gmail.com</p>
+            <p>Phone: +234 816 912 1716</p>
+            <p>Port Harcourt, Nigeria</p>
+        </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
-<script src="mijs.js"></script>
+
 </html>
