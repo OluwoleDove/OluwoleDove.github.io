@@ -26,12 +26,17 @@
 
         .banner {
             color: #2b2828;
-            height: 80vh;
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             padding: 0 20px;
+        }
+
+        .banner img {
+            width: 100px;
+            border-radius: 50%;
         }
 
         .banner h1 {
@@ -62,10 +67,12 @@
         .card-content a {
             color: #242627;
             text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
 
         .card-content a:hover {
-            text-decoration: underline;
+            color: #007BFF;
+            transform: scale(1.1);
         }
 
         .contact-info {
@@ -79,6 +86,55 @@
             margin: 0 0 10px;
         }
 
+        .initiative-card img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .talk-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .talk-section img {
+            width: 150px;
+            border-radius: 50%;
+        }
+
+        .talk-section .content {
+            margin-left: 20px;
+        }
+
+        .talk-section button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .talk-section button:hover {
+            background-color: #0056b3;
+        }
+
+        .footer .social-icons {
+            margin-top: 20px;
+        }
+
+        .footer .social-icons a {
+            color: #2b2828;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .footer .social-icons a:hover {
+            color: #007BFF;
+        }
+
         @media only screen and (max-width: 600px) {
             .banner {
                 height: 60vh;
@@ -87,6 +143,19 @@
             .banner h1 {
                 font-size: 2em;
             }
+
+            .talk-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .talk-section img {
+                margin-bottom: 20px;
+            }
+
+            .talk-section .content {
+                margin-left: 0;
+            }
         }
     </style>
 </head>
@@ -94,6 +163,7 @@
 <body>
     <div class="banner">
         <div>
+            <img src="img/fash_wit.png">
             <h1><strong>Oluwole Fasakin</strong></h1>
             <h2>DATA SCIENCE | WEB DEVELOPMENT | BUSINESS INTELLIGENCE</h2>
         </div>
@@ -141,7 +211,7 @@
     <div class="section">
         <div class="row">
             <div class="col s12 m6">
-                <div class="card hoverable" onclick="window.location.href='https://www.witslens.com'">
+                <div class="card hoverable initiative-card" onclick="window.location.href='https://www.witslens.com'">
                     <div class="card-image">
                         <img src="img/witslens.png" alt="WitsLens Logo" class="responsive-img">
                     </div>
@@ -152,7 +222,7 @@
                 </div>
             </div>
             <div class="col s12 m6">
-                <div class="card hoverable" onclick="window.location.href='techcurious.html'">
+                <div class="card hoverable initiative-card" onclick="window.location.href='techcurious.html'">
                     <div class="card-image">
                         <img src="img/techcurious.png" alt="TechCurious Logo" class="responsive-img">
                     </div>
@@ -176,35 +246,38 @@
     </div>
 
     <div class="header">
-        <h2>Toolbelt of Expertise</h2>
+        <h2>Quick Enquiry?</h2>
     </div>
+    <div class="talk-section">
+        <div class="content">
+            <h3>You can talk to Oluwole</h3>
+            <button onclick="window.location.href='mailto:oluwolefasakin007@gmail.com'">Message</button>
+        </div>
+        <img src="img/fash_tech.png" alt="Oluwole">
+    </div>
+
     <div class="section">
         <div class="row">
             <div class="col s12 m4">
                 <ul class="collection">
-                    <li class="collection-item"><i class="fas fa-code"></i> <strong>Programming Languages</strong>
+                    <li class="collection-item"><i class="fas fa-code"></i> <strong>Soft Skills</strong>
                         <ul>
-                            <li>Python</li>
-                            <li>JavaScript</li>
-                            <li>PHP</li>
-                            <li>MySQL</li>
-                            <li>MongoDB</li>
+                            <li>Project Management</li>
+                            <li>Corporate Communications</li>
+                            <li>Team Lead</li>
+                            <li>Critical Thinking</li>
+                            <li>Administration</li>
                         </ul>
                     </li>
                 </ul>
             </div>
             <div class="col s12 m4">
                 <ul class="collection">
-                    <li class="collection-item"><i class="fas fa-cogs"></i> <strong>Libraries & Frameworks</strong>
+                    <li class="collection-item"><i class="fas fa-cogs"></i> <strong>Tech Stack</strong>
                         <ul>
-                            <li>Bootstrap</li>
-                            <li>JQuery</li>
-                            <li>React</li>
-                            <li>NodeJS</li>
-                            <li>Express</li>
-                            <li>Numpy</li>
-                            <li>Pandas</li>
-                            <li>Scikit-learn</li>
+                            <li>MERN</li>
+                            <li>LAMP</li>
+                            <li>Data Modelling</li>
                         </ul>
                     </li>
                 </ul>
@@ -217,7 +290,6 @@
                             <li>Tableau</li>
                             <li>Microsoft Excel</li>
                             <li>Jupyter Note</li>
-                            <li>Anaconda</li>
                             <li>Google Colab</li>
                         </ul>
                     </li>
@@ -242,9 +314,14 @@
 
     <div class="footer">
         <div class="contact-info">
-            <p>Email: oluwolefasakin007@gmail.com</p>
-            <p>Phone: +234 816 912 1716</p>
-            <p>Port Harcourt, Nigeria</p>
+            <p><i class="fas fa-message"></i> oluwolefasakin007@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +234 816 912 1716</p>
+            <p><i class="fas fa-location"></i> Port Harcourt, Nigeria</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x"></i></a>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
