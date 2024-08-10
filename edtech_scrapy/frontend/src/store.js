@@ -1,21 +1,23 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
+import { thunk } from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { courseListReducer, courseDetailsReducer } from './reducers/courseReducers';
 
+// Combine all reducers
 const reducer = combineReducers({
     courseList: courseListReducer,
     courseDetails: courseDetailsReducer,
 });
 
+// Initial State (if any)
 const initialState = {};
 
-const middleware = [thunk];
-
+// Create the store with middleware and Redux DevTools extension
+const composeEnhancer = composeWithDevTools || compose;
 const store = createStore(
     reducer,
     initialState,
-    composeWithDevTools(applyMiddleware(...middleware))
+    composeEnhancer(applyMiddleware(thunk))
 );
 
 export default store;
