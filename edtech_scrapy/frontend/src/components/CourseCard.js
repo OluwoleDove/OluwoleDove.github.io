@@ -1,14 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { FaStar } from 'react-icons/fa';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const CourseCard = ({ course }) => {
     return (
-        <div className="course-card">
-            <Link to={`/course/${course.id}`}>
+        <Link to={`/course/${course.id}`}> {/* Wrap the card in a Link */}
+            <div className="course-card">
                 <img src={course.thumbnail} alt={course.title} />
                 <h3>{course.title}</h3>
-            </Link>
-        </div>
+                <div className="rating">
+                    {[...Array(5)].map((_, index) => (
+                        <FaStar
+                            key={index}
+                            color={index < course.rating ? 'gold' : 'gray'}
+                        />
+                    ))}
+                </div>
+            </div>
+        </Link>
     );
 };
 

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { listCourses } from '../actions/courseActions';
 import CourseCard from '../components/CourseCard';
+import Footer from '../components/Footer'; // Import the Footer component
 
 const DashboardScreen = () => {
     const dispatch = useDispatch();
@@ -37,6 +38,7 @@ const DashboardScreen = () => {
                     </div>
                 )}
             </section>
+            <Footer />
         </div>
     );
 };

@@ -151,3 +151,15 @@ a {
   background-color: #007BFF;
   color: #fff;
 }
+
+/* styles.css or similar */
+
+.course-card .rating {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.course-card .rating svg {
+  margin-right: 5px;
+}
