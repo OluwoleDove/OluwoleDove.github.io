@@ -7,15 +7,18 @@ import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Navbar = () => {
     return (
-        <nav className="navbar">
-            <div className="logo">Your Logo</div>
-            <ul className="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <FaBars className="menu-icon" />
-        </nav>
+        <header className="dashboard-header">
+            <h1>OpenMentor</h1>
+            <nav className="dashboard-nav">
+                <ul>
+                    <li>All courses</li>
+                    <li>My Lists</li>
+                    <li>Wishlist</li>
+                    <li>Archived</li>
+                    <li>Learning Tools</li>
+                </ul>
+            </nav>
+        </header>
     );
 };
 

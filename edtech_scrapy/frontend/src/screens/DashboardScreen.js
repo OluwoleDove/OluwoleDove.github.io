@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { listCourses } from '../actions/courseActions';
 import CourseCard from '../components/CourseCard';
 import Footer from '../components/Footer'; // Import the Footer component
+import Navbar from '../components/Navbar';
 
 const DashboardScreen = () => {
     const dispatch = useDispatch();
@@ -16,18 +17,7 @@ const DashboardScreen = () => {
 
     return (
         <div className="dashboard">
-            <header className="dashboard-header">
-                <h1>My Learning</h1>
-                <nav className="dashboard-nav">
-                    <ul>
-                        <li>All courses</li>
-                        <li>My Lists</li>
-                        <li>Wishlist</li>
-                        <li>Archived</li>
-                        <li>Learning Tools</li>
-                    </ul>
-                </nav>
-            </header>
+            <Navbar />
             <section className="courses">
                 <h2>Your Courses</h2>
                 {loading ? <p>Loading...</p> : error ? <p>{error}</p> : (

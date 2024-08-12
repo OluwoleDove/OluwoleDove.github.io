@@ -47,3 +47,30 @@ export const listCourseDetails = (id) => async (dispatch) => {
         });
     }
 };
+
+export const likeCourse = (courseId) => async (dispatch, getState) => {
+    try {
+        const { data } = await axios.post('/api/courses/like', { course_id: courseId, user_id: getState().auth.userId });
+        dispatch({ type: 'COURSE_LIKE_SUCCESS', payload: data });
+    } catch (error) {
+        dispatch({ type: 'COURSE_LIKE_FAIL', payload: error.response.data.message });
+    }
+};
+
+export const commentOnCourse = (courseId, comment) => async (dispatch, getState) => {
+    try {
+        const { data } = await axios.post('/api/courses/comment', { course_id: courseId, user_id: getState().auth.userId, comment });
+        dispatch({ type: 'COURSE_COMMENT_SUCCESS', payload: data });
+    } catch (error) {
+        dispatch({ type: 'COURSE_COMMENT_FAIL', payload: error.response.data.message });
+    }
+};
+
+export const shareCourse = (courseId, shareLink) => async (dispatch, getState) => {
+    try {
+        const { data } = await axios.post('/api/courses/share', { course_id: courseId, user_id: getState().auth.userId, share_link: shareLink });
+        dispatch({ type: 'COURSE_SHARE_SUCCESS', payload: data });
+    } catch (error) {
+        dispatch({ type: 'COURSE_SHARE_FAIL', payload: error.response.data.message });
+    }
+};

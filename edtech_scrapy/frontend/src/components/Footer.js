@@ -11,7 +11,7 @@ const Footer = () => {
                     <a href="#"><FaTwitter /></a>
                     <a href="#"><FaInstagram /></a>
                 </div>
-                <p>&copy; 2024 Your Company. All rights reserved.</p>
+                <p>&copy; 2024 OpenMentor. All rights reserved.</p>
             </div>
         </footer>
     );
