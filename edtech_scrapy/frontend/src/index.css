@@ -12,8 +12,8 @@ a {
 }
 
 /* Dashboard Screen */
-.dashboard {
-  padding: 20px;
+.dashboard, .cap, .login-container {
+  padding: 0px 20px;
 }
 
 .dashboard-header {
@@ -298,7 +298,7 @@ a {
 
 .login-box input[type="email"],
 .login-box input[type="password"] {
-  width: 100%;
+  width: 94.5%;
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
