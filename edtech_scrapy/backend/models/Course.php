@@ -9,18 +9,19 @@ class Course {
     }
 
     public function getAllCourses() {
-        $sql = "SELECT id, title, thumbnail FROM courses";
+        $sql = "SELECT id, title, thumbnail, tutor, price, rating, description FROM courses";
         $result = $this->connection->query($sql);
-
+    
         $courses = [];
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 $courses[] = $row;
             }
         }
-
+    
         return $courses;
     }
+    
 
     public function getCourseDetails($course_id) {
         $sql = "SELECT c.id, c.title, v.id AS video_id, v.title AS video_title, v.video_url, v.transcript
