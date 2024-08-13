@@ -19,7 +19,7 @@ const DashboardScreen = () => {
         <div className="dashboard">
             <Navbar />
             <section className="courses">
-                <h2>Your Courses</h2>
+                <h2>Popular Courses</h2>
                 {loading ? <p>Loading...</p> : error ? <p>{error}</p> : (
                     <div className="course-cards">
                         {courses.map(course => (

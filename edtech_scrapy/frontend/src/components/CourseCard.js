@@ -9,6 +9,7 @@ const CourseCard = ({ course }) => {
                 <img src={course.thumbnail} alt={course.title} />
                 <h3>{course.title}</h3>
                 <div className="rating">
+                    <span>{ course.rating } </span>
                     {[...Array(5)].map((_, index) => (
                         <FaStar
                             key={index}
