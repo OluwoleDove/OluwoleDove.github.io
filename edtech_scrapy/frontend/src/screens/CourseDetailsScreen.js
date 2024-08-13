@@ -24,17 +24,12 @@ const CourseDetailsScreen = () => {
     }, [dispatch, id]);
 
     useEffect(() => {
-        if (course && course.videos && course.videos.length > 0) {
-            setVideoUrl(course.videos[0].video_url);
-            setTranscript(course.videos[0].transcript);
+        if (course && course.modules && course.modules.length > 0) {
+            setVideoUrl(course.modules[0].video_url); // Set the initial video URL if applicable
+            setTranscript(course.modules[0].transcript); // Set the initial transcript if applicable
             setLikes(course.likes || 0); // Initialize likes from the course data
         }
     }, [course]);
-
-    const handleVideoChange = (video) => {
-        setVideoUrl(video.video_url);
-        setTranscript(video.transcript);
-    };
 
     const handleAuthAction = (actionType) => {
         const isAuthenticated = checkAuthentication();
@@ -64,8 +59,12 @@ const CourseDetailsScreen = () => {
         }
     };
 
+    const handleModuleClick = (videoUrl) => {
+        setVideoUrl(videoUrl); // Update the video URL to the clicked module's video
+    };
+
     return (
-        <div class="cap">
+        <div className="cap">
             <Navbar />
             <div className="course-details">
                 {loading ? <p>Loading...</p> : error ? <p>{error}</p> : (
@@ -94,20 +93,22 @@ const CourseDetailsScreen = () => {
                             </div>
                         </div>
                         <aside className="course-content">
-                            <h3>Course Content</h3>
-                            <ul className="course-list">
-                                {course.videos.map(video => (
-                                    <li key={video.id} onClick={() => handleVideoChange(video)}>
-                                        <img src={video.thumbnail} alt={video.title} />
-                                        <div className="video-info">
-                                            <span>{video.title}</span>
-                                            <span>{video.duration}</span>
-                                        </div>
-                                    </li>
-                                ))}
+                            <h3>Course Modules</h3>
+                            <ul className="module-list">
+                                {course.modules && course.modules.length > 0 ? (
+                                    course.modules.map(module => (
+                                        <li key={module.id} onClick={() => handleModuleClick(module.video_url)}>
+                                            <img src={module.thumbnail} alt={module.title} />
+                                            <div className="module-info">
+                                                <span>{module.title}</span>
+                                            </div>
+                                        </li>
+                                    ))
+                                ) : (
+                                    <p>No modules available for this course.</p>
+                                )}
                             </ul>
                         </aside>
-
                     </>
                 )}
             </div>
