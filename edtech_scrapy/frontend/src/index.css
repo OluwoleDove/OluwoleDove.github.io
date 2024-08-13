@@ -406,7 +406,7 @@ footer .footer-content {
 @media (max-width: 768px) {
   .dashboard-header .menu-icon {
     display: block;
-    align-content: right;
+    margin-left: 5em;
   }
 
   .course-details {
