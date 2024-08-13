@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { listCourseDetails, likeCourse, commentOnCourse, shareCourse } from '../actions/courseActions';
 import { useParams, useNavigate } from 'react-router-dom';
 import { checkAuthentication } from '../actions/authActions';
+import { FaHeart, FaComment, FaShare } from 'react-icons/fa';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -77,20 +78,21 @@ const CourseDetailsScreen = () => {
                             </div>
                             <div className="social-actions">
                                 <button onClick={() => handleAuthAction('like')}>
-                                    <i className="fas fa-thumbs-up"></i> {likes} Like
+                                    <FaHeart className="social-icon" /> {likes} 
                                 </button>
                                 <button onClick={() => handleAuthAction('comment')}>
-                                    <i className="fas fa-comment"></i> Comment
+                                    <FaComment className="social-icon" />
                                 </button>
                                 <button onClick={() => handleAuthAction('share')}>
-                                    <i className="fas fa-share"></i> Share
+                                    <FaShare className="social-icon" />
                                 </button>
-                                <textarea
-                                    value={newComment}
-                                    onChange={(e) => setNewComment(e.target.value)}
-                                    placeholder="Add a comment"
-                                ></textarea>
                             </div>
+                            <textarea
+                                value={newComment}
+                                onChange={(e) => setNewComment(e.target.value)}
+                                placeholder="Add a comment"
+                                className="comment-box"
+                            ></textarea>
                         </div>
                         <aside className="course-content">
                             <h3>Course Modules</h3>

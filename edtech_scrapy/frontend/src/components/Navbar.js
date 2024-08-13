@@ -18,10 +18,9 @@ const Navbar = () => {
             <nav className="dashboard-nav">
                 <ul className={menuOpen ? 'show' : ''}>
                     <li>All courses</li>
-                    <li>My Lists</li>
                     <li>Wishlist</li>
                     <li>Archived</li>
-                    <li>Learning Tools</li>
+                    <li>Tools</li>
                 </ul>
             </nav>
         </header>
