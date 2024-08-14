@@ -6,9 +6,9 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-content">
                 <div className="social-links">
-                    <a href="#"><FaFacebook /></a>
-                    <a href="#"><FaTwitter /></a>
-                    <a href="#"><FaInstagram /></a>
+                    <a href="www.facebook.com"><FaFacebook /></a>
+                    <a href="www.twitter.com"><FaTwitter /></a>
+                    <a href="www.instagram.com"><FaInstagram /></a>
                 </div>
                 <p>&copy; 2024 OpenMentor. All rights reserved.</p>
             </div>
