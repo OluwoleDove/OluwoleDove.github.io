@@ -5,13 +5,19 @@ import { courseListReducer, courseDetailsReducer } from './reducers/courseReduce
 import { userLoginReducer } from './reducers/authReducers';
 
 // Define the initial state with userInfo from localStorage
+let userInfo;
+try {
+    userInfo = JSON.parse(localStorage.getItem('userInfo'));
+} catch (e) {
+    userInfo = null;
+}
+
 const initialState = {
     userLogin: {
-        userInfo: localStorage.getItem('userInfo')
-            ? JSON.parse(localStorage.getItem('userInfo'))
-            : null,
+        userInfo: userInfo || null,
     },
 };
+
 
 // Combine all reducers
 const reducer = combineReducers({
@@ -21,11 +27,11 @@ const reducer = combineReducers({
 });
 
 // Create the store with middleware and Redux DevTools extension
-const composeEnhancer = composeWithDevTools || compose;
+const composeEnhancer = composeWithDevTools(applyMiddleware(thunk));
 const store = createStore(
     reducer,
     initialState,
-    composeEnhancer(applyMiddleware(thunk))
+    composeEnhancer
 );
 
 export default store;
