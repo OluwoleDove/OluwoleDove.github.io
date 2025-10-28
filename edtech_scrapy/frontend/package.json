@@ -2,7 +2,7 @@
   "name": "openmentor",
   "version": "0.1.0",
   "proxy": "https://witslens.com/backend/",
-  "homepage": "https://crintexsolutions.github.io/openmentor",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
