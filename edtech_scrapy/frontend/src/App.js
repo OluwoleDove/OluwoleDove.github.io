@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from './store';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import DashboardScreen from './screens/DashboardScreen';
 import CourseDetailsScreen from './screens/CourseDetailsScreen';
 import LoginScreen from './screens/LoginScreen';

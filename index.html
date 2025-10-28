@@ -4,325 +4,1669 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Data Scientist and Developer in Port-Harcourt, Nigeria" />
-    <meta name="keywords" content="data, data, science, professional, developer, ecommerce, elearning, machine, learning, web, software, engineer">
+    
+    <meta name="description" content="Oluwole Fasakin | Application Architect & Data Engineering Lead. 9 years experience delivering data-driven products and scalable engineering systems.">
+    <meta name="keywords" content="data science, product lead, software engineer, application architect, data engineering, python, next.js, power bi, tableau, agile, scrum, digital portfolio, bizhash, brand strategy, sales leads">
     <meta property="og:url" content="https://oluwoledove.github.io" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="Business Intelligence | Data Science | Product Development" />
-    <meta property="og:image" content="https://oluwoledove.github.io/img/banner_mobile.jpg" />
-    <title>Oluwole Fasakin | Data-Driven Professional</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Oluwole Fasakin | Application Architect & Data Engineering Lead" />
+    <meta property="og:description" content="Oluwole Fasakin's digital portfolio: 9 years experience delivering data-driven products and scalable engineering systems that turn analytics into measurable business outcomes." />
+    <meta property="og:image" content="https://oluwoledove.github.io/img/fash_wit.png" /> 
+    <title>Applications & Data Engineer</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> 
+
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
+        /* 1. CSS VARIABLES & THEME SETUP */
+        :root {
+            /* Default: Dark Mode */
+            --primary-accent: #007aff;
+            --primary-dark: #1e1e1e;
+            --secondary-dark: #2c2c2c;
+            --text-light: #e0e0e0;
+            --text-medium: #a0a0a0;
+            --text-white: #ffffff;
+            --border-color: #383838;
+            --shadow-dark: 0 8px 30px rgba(0, 0, 0, 0.6);
+            --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.3);
+            --shadow-card-hover: 0 8px 25px rgba(0, 0, 0, 0.5);
+            --bg-gradient: linear-gradient(135deg, var(--primary-dark) 0%, #0d0d0d 100%);
+            --navbar-bg: rgba(30, 30, 30, 0.8);
+            --tag-bg: #3a3a3a;
+            --tag-border: #4a4a4a;
+            --tag-text: var(--text-light);
+            --btn-link-bg: #3a3a3a;
+            --btn-link-text: var(--text-white);
+            --transition-speed: 0.4s;
+            --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1); /* Very smooth, high-end ease */
+        }
+
+        body.light-mode {
+            /* Light Mode */
+            --primary-dark: #f4f5f7;
+            --secondary-dark: #ffffff;
+            --text-light: #5e6c84;
+            --text-medium: #42526e;
+            --text-white: #172b4d;
+            --border-color: #dfe1e6;
+            --shadow-dark: 0 8px 30px rgba(0, 0, 0, 0.08);
+            --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.05);
+            --shadow-card-hover: 0 8px 25px rgba(0, 0, 0, 0.1);
+            --bg-gradient: linear-gradient(135deg, #ffffff 0%, #f4f5f7 100%);
+            --navbar-bg: rgba(255, 255, 255, 0.8);
+            --tag-bg: #ebecf0;
+            --tag-border: #dfe1e6;
+            --tag-text: #172b4d;
+            --btn-link-bg: #ebecf0;
+            --btn-link-text: #172b4d;
+        }
+
+
+        /* 2. RESET & GLOBAL STYLES */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
         }
 
-        .banner {
-            color: #2b2828;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 0 20px;
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
         }
 
-        .banner img {
-            width: 100px;
-            border-radius: 50%;
+        body {
+            font-family: 'Inter', 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text-light);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+            transition: background-color var(--transition-speed) var(--ease-out-quint), color var(--transition-speed) var(--ease-out-quint);
         }
 
-        .banner h1 {
-            font-size: 10em;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            padding: 6rem 0;
+            position: relative;
+        }
+
+        h1, h2, h3, h4 {
+            line-height: 1.2;
+            font-weight: 700;
+            color: var(--text-white);
+            transition: color var(--transition-speed) var(--ease-out-quint);
+        }
+
+        h1 {
+            font-size: 3.8rem;
+            margin-bottom: 1rem;
             font-weight: 800;
+            letter-spacing: -0.05em;
         }
 
-        .banner h2 {
-            font-size: 2em;
-            font-weight: 500;
+        h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            letter-spacing: -0.04em;
         }
 
-        .section {
-            padding: 40px 20px;
-        }
-
-        .header, .footer {
+        .section-title {
+            font-size: 2.8rem;
             text-align: center;
-            background-color: #949699;
-            color: #2b2828;
-            padding: 20px 0;
+            margin-bottom: 4rem;
+            color: var(--text-white);
+            position: relative;
+            padding-bottom: 0.5rem;
+            letter-spacing: -0.03em;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 5px;
+            background-color: var(--primary-accent);
+            border-radius: 3px;
         }
 
-        .header h2, .footer p {
-            margin: 0;
+        h3 {
+            font-size: 1.75rem;
+            color: var(--text-white);
+            margin-bottom: 0.75rem;
+        }
+        
+        h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-medium);
+            margin-bottom: 1rem;
         }
 
-        .card-content a {
-            color: #242627;
+        p {
+            margin-bottom: 1.25rem;
+            color: var(--text-light);
+            transition: color var(--transition-speed) var(--ease-out-quint);
+        }
+
+        a {
+            color: var(--primary-accent);
             text-decoration: none;
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
-
-        .card-content a:hover {
-            color: #007BFF;
-            transform: scale(1.1);
-        }
-
-        .contact-info {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .contact-info p {
-            margin: 0 0 10px;
-        }
-
-        .initiative-card img {
-            height: 200px;
-            width: 100%;
-            object-fit: cover;
-        }
-
-        .talk-section {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 40px 20px;
-        }
-
-        .talk-section img {
-            width: 150px;
-            border-radius: 50%;
-        }
-
-        .talk-section .content {
-            margin-left: 20px;
-        }
-
-        .talk-section button {
-            background-color: #007BFF;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .talk-section button:hover {
-            background-color: #0056b3;
-        }
-
-        .footer .social-icons {
-            margin-top: 20px;
-        }
-
-        .footer .social-icons a {
-            color: #2b2828;
-            margin: 0 10px;
             transition: color 0.3s ease;
         }
 
-        .footer .social-icons a:hover {
-            color: #007BFF;
+        a:hover {
+            color: var(--primary-accent);
+            text-decoration: underline;
+        }
+        
+        body.light-mode a:hover {
+            color: #0056b3;
         }
 
-        @media only screen and (max-width: 600px) {
-            .banner {
-                height: 60vh;
-            }
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--primary-accent);
+            color: #ffffff;
+            padding: 0.9rem 2.2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 122, 255, 0.4);
+            font-size: 1.1rem;
+        }
 
-            .banner h1 {
-                font-size: 2em;
-            }
+        .btn-primary:hover {
+            background-color: #0066d6;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 122, 255, 0.6);
+            text-decoration: none;
+            color: #ffffff;
+        }
+        
+        .btn-secondary {
+            display: inline-block;
+            background: none;
+            color: var(--primary-accent);
+            border: 2px solid var(--primary-accent);
+            padding: 0.9rem 2.2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+            font-size: 1.1rem;
+            margin-left: 1rem;
+        }
 
-            .talk-section {
+        .btn-secondary:hover {
+            background-color: var(--primary-accent);
+            color: #ffffff;
+            transform: translateY(-3px);
+            text-decoration: none;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.8rem;
+            margin-top: 2rem;
+        }
+        
+        .social-links a {
+            color: var(--text-medium);
+            font-size: 2rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: var(--primary-accent);
+            transform: translateY(-5px);
+            text-decoration: none;
+        }
+
+        /* 3. NAVIGATION */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: var(--navbar-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
+            transition: background-color var(--transition-speed) var(--ease-out-quint), border-color var(--transition-speed) var(--ease-out-quint);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        .nav-brand {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--text-white);
+            text-decoration: none;
+            letter-spacing: -0.03em;
+            transition: color var(--transition-speed) var(--ease-out-quint);
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+            align-items: center;
+        }
+        
+        .nav-link {
+            font-weight: 500;
+            color: var(--text-light);
+            text-decoration: none;
+            padding: 0.5rem 0;
+            position: relative;
+            font-size: 1.05rem;
+            transition: color var(--transition-speed) var(--ease-out-quint);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: var(--primary-accent);
+            transition: width 0.3s ease;
+            border-radius: 1.5px;
+        }
+
+        .nav-link:hover::after,
+        .nav-link:focus::after {
+            width: 100%;
+        }
+
+        .mobile-nav-toggle {
+            display: none;
+            font-size: 2rem;
+            color: var(--text-white);
+            background: none;
+            border: none;
+            cursor: pointer;
+            z-index: 1001;
+            transition: transform 0.3s ease, color var(--transition-speed) var(--ease-out-quint);
+        }
+        
+        .mobile-nav-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        /* 3.1. Theme Toggle */
+        .theme-toggle-btn {
+            background: none;
+            border: none;
+            color: var(--text-medium);
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: color 0.3s ease, transform 0.3s ease;
+            padding: 0.5rem;
+        }
+        .theme-toggle-btn:hover {
+            color: var(--primary-accent);
+            transform: scale(1.1);
+        }
+        .theme-toggle-btn .fa-sun {
+            display: none; /* Hidden by default */
+        }
+        body.light-mode .theme-toggle-btn .fa-sun {
+            display: inline-block;
+        }
+        body.light-mode .theme-toggle-btn .fa-moon {
+            display: none;
+        }
+
+
+        /* 4. HERO SECTION (Unchanged) */
+        #hero {
+            padding-top: 120px; 
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            background: var(--bg-gradient);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-layout {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+        }
+
+        .hero-left {
+            flex: 2;
+            max-width: 65%;
+        }
+
+        .hero-right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            padding: 2.5rem;
+            background-color: var(--secondary-dark);
+            border-radius: 15px;
+            box-shadow: var(--shadow-card);
+            border: 1px solid var(--border-color);
+            transform: perspective(1000px) rotateY(5deg) scale(0.98); 
+            transform-origin: left center;
+            transition: transform 0.5s var(--ease-out-quint), background-color var(--transition-speed) var(--ease-out-quint), border-color var(--transition-speed) var(--ease-out-quint);
+        }
+
+        .hero-right:hover {
+             transform: perspective(1000px) rotateY(0deg) scale(1.0);
+        }
+
+        .hero-headshot {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary-accent);
+            box-shadow: 0 0 0 8px rgba(0, 122, 255, 0.3);
+            margin-bottom: 1.5rem;
+            transition: transform 0.4s var(--ease-out-quint);
+        }
+        
+        .hero-right:hover .hero-headshot {
+            transform: scale(1.05);
+        }
+
+        .hero-right h3 {
+            font-size: 1.7rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-white);
+        }
+
+        .hero-right p.title {
+            font-size: 1.1rem;
+            color: var(--primary-accent);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .hero-right .location,
+        .hero-right .links {
+            font-size: 0.95rem;
+            color: var(--text-medium);
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-right .links a {
+            margin: 0 0.5rem;
+        }
+
+        .hero-right .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 2rem;
+            width: 100%;
+        }
+
+        .hero-right .btn-group .btn-primary,
+        .hero-right .btn-group .btn-secondary {
+            width: 100%;
+            margin-left: 0;
+            text-align: center;
+        }
+
+        .hero-main-title {
+            font-size: 4.5rem;
+            color: var(--text-white);
+            letter-spacing: -0.06em;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+        
+        .hero-tagline {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--primary-accent);
+            margin-bottom: 2rem;
+        }
+        
+        .hero-description {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin-bottom: 3rem;
+        }
+
+        .outcome-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .outcome-card {
+            background-color: var(--secondary-dark);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-card);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color var(--transition-speed) var(--ease-out-quint), border-color var(--transition-speed) var(--ease-out-quint);
+        }
+        
+        .outcome-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: var(--shadow-card-hover);
+        }
+
+        .outcome-card .metric {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary-accent);
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+
+        .outcome-card .description {
+            font-size: 0.95rem;
+            color: var(--text-medium);
+            line-height: 1.4;
+        }
+
+        /* 5. ABOUT SECTION (Reverted to 3-Column Grid) */
+        #about .container {
+            max-width: 1000px;
+            text-align: center;
+        }
+
+        #about .about-intro {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 4rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .about-focus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Back to 3-column */
+            gap: 2rem;
+            text-align: left;
+        }
+
+        .focus-card {
+            background: var(--secondary-dark);
+            border-radius: 15px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow-card);
+            border: 1px solid var(--border-color);
+            transition: all var(--transition-speed) var(--ease-out-quint);
+        }
+
+        .focus-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-card-hover);
+        }
+        
+        .focus-card .icon {
+            font-size: 2.5rem;
+            color: var(--primary-accent);
+            margin-bottom: 1.5rem;
+        }
+        
+        .focus-card h3 {
+            font-size: 1.4rem;
+            color: var(--text-white);
+            margin-bottom: 0.75rem;
+        }
+
+        .focus-card p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin-bottom: 0;
+        }
+
+
+        /* 6. EXPERTISE SECTION (Skills - 3 Columns) */
+        #expertise {
+            background-color: var(--secondary-dark);
+            transition: background-color var(--transition-speed) var(--ease-out-quint);
+        }
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .expertise-category {
+            background: var(--primary-dark);
+            border-radius: 15px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow-card);
+            border: 1px solid var(--border-color);
+            transition: all var(--transition-speed) var(--ease-out-quint);
+        }
+        
+        .expertise-category:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-card-hover);
+        }
+
+        .expertise-category h3 {
+            font-size: 1.5rem;
+            color: var(--primary-accent);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.7rem;
+            border-bottom: 3px solid var(--border-color);
+            display: inline-block;
+            letter-spacing: 0.02em;
+            transition: border-color var(--transition-speed) var(--ease-out-quint);
+        }
+        
+        .expertise-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            list-style: none;
+        }
+        
+        .expertise-tag {
+            background-color: var(--tag-bg);
+            color: var(--tag-text);
+            padding: 0.6rem 1.2rem;
+            border-radius: 25px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            border: 1px solid var(--tag-border);
+            transition: background-color 0.2s ease, color 0.2s ease, border-color var(--transition-speed) var(--ease-out-quint);
+        }
+        
+        .expertise-tag:hover {
+            background-color: var(--primary-accent);
+            color: #ffffff;
+            border-color: var(--primary-accent);
+        }
+
+        /* 7. PROJECTS / SHOWCASE SECTION (Reverted to 2-Column Grid) */
+        .project-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Clean 2-column grid */
+            gap: 2.5rem;
+        }
+
+        .project-card-new {
+            background: var(--secondary-dark);
+            border-radius: 15px;
+            box-shadow: var(--shadow-card);
+            border: 1px solid var(--border-color);
+            transition: all var(--transition-speed) var(--ease-out-quint);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        
+        .project-card-new:hover {
+            box-shadow: var(--shadow-card-hover);
+            transform: translateY(-10px) scale(1.01);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            object-position: center;
+            border-bottom: 1px solid var(--border-color);
+            transition: border-color var(--transition-speed) var(--ease-out-quint);
+        }
+
+        .project-content-new {
+            padding: 2rem;
+            flex-grow: 1; 
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .project-content-new h3 {
+            font-size: 1.5rem;
+            color: var(--text-white);
+            margin-bottom: 0.8rem;
+        }
+        
+        .project-content-new h4 {
+            font-size: 1.05rem;
+            color: var(--primary-accent);
+            margin-bottom: 1rem;
+        }
+
+        .project-content-new p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+        
+        .project-actions {
+            margin-top: auto;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .project-actions .btn-link {
+            background-color: var(--btn-link-bg);
+            color: var(--btn-link-text);
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.3s ease, color var(--transition-speed) var(--ease-out-quint);
+        }
+        
+        .project-actions .btn-link:hover {
+            background-color: var(--primary-accent);
+            color: #ffffff;
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+
+        /* 8. GITHUB SECTION */
+        #github {
+            background-color: var(--primary-dark);
+            transition: background-color var(--transition-speed) var(--ease-out-quint);
+        }
+        .github-card {
+            background-color: var(--secondary-dark);
+            border-radius: 15px;
+            padding: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            box-shadow: var(--shadow-card);
+            border: 1px solid var(--border-color);
+            transition: all var(--transition-speed) var(--ease-out-quint);
+        }
+        
+        .github-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-card-hover);
+        }
+
+        .github-card-content h2 {
+            margin-bottom: 1rem;
+            font-size: 2.2rem;
+            letter-spacing: -0.03em;
+        }
+        
+        .github-card-content p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin-bottom: 0;
+        }
+        
+        .github-card .btn-primary {
+            flex-shrink: 0;
+        }
+
+        .github-activity-map {
+            width: 180px;
+            height: 120px;
+            background-color: #0c0d0f; 
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.1);
+            position: relative;
+            flex-shrink: 0;
+        }
+        .github-activity-map img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            opacity: 0.8;
+            filter: grayscale(80%) brightness(0.8);
+        }
+        .github-activity-map::before {
+            content: 'Activity Map';
+            position: absolute;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.8rem;
+            font-weight: 500;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+        body.light-mode .github-activity-map {
+            background-color: #f6f8fa; 
+            border: 1px solid #d0d7de;
+        }
+        body.light-mode .github-activity-map::before {
+            color: rgba(0,0,0,0.5);
+        }
+
+
+        /* 9. BRAND STRATEGY SECTION (New Carousel) */
+        #brand-strategy {
+            background-color: var(--primary-dark);
+            transition: background-color var(--transition-speed) var(--ease-out-quint);
+            padding: 6rem 0;
+            overflow: hidden;
+        }
+
+        .logo-carousel-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+        }
+
+        .logo-carousel-track {
+            display: flex;
+            width: calc(200px * 12); /* 2x number of brands */
+            animation: scroll 30s linear infinite;
+        }
+        
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-200px * 6)); } /* 1x number of brands */
+        }
+
+        .brand-logo-card {
+            width: 200px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .brand-logo-card a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.6;
+            filter: grayscale(100%);
+            transition: opacity 0.3s ease, filter 0.3s ease, transform 0.3s ease;
+        }
+        
+        .brand-logo-card a:hover {
+            opacity: 1;
+            filter: grayscale(0%);
+            transform: scale(1.1);
+            text-decoration: none;
+        }
+
+        .brand-logo-card img {
+            max-width: 130px;
+            max-height: 50px;
+            object-fit: contain;
+        }
+        
+        /* Placeholder styling */
+        .brand-logo-card .placeholder-logo {
+            width: 130px;
+            height: 50px;
+            border: 2px dashed var(--border-color);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-medium);
+            text-align: center;
+            line-height: 1.3;
+        }
+        
+        body.light-mode .brand-logo-card a {
+            opacity: 0.8;
+            filter: grayscale(80%);
+        }
+        body.light-mode .brand-logo-card a:hover {
+            opacity: 1;
+            filter: grayscale(0%);
+        }
+
+        /* 10. THOUGHT LEADERSHIP (Research) */
+        .research-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        .research-item-new {
+            background: var(--secondary-dark);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-card);
+            border: 1px solid var(--border-color);
+            transition: all var(--transition-speed) var(--ease-out-quint);
+        }
+        
+        .research-item-new:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-card-hover);
+        }
+        
+        .research-item-new h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.6rem;
+        }
+        
+        .research-item-new .journal {
+            font-weight: 500;
+            color: var(--text-medium);
+            display: block;
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+        }
+        
+        .research-item-new p {
+            margin-bottom: 0;
+            font-size: 1rem;
+        }
+        
+        .research-item-new .doi-link {
+            font-size: 0.9rem;
+            color: var(--text-medium);
+            margin-top: 1rem;
+            display: block;
+        }
+
+        /* 11. EDUCATION & AWARDS */
+        #education-awards {
+            background-color: var(--secondary-dark);
+            transition: background-color var(--transition-speed) var(--ease-out-quint);
+        }
+        .education-grid-new {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+        }
+        
+        .education-card-new {
+            background: var(--primary-dark);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-card);
+            border: 1px solid var(--border-color);
+            text-align: center;
+            transition: all var(--transition-speed) var(--ease-out-quint);
+        }
+        
+        .education-card-new:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-card-hover);
+        }
+        
+        .education-card-new .icon {
+            font-size: 3rem;
+            color: var(--primary-accent);
+            margin-bottom: 1.5rem;
+        }
+        
+        .education-card-new h3 {
+            font-size: 1.3rem;
+            color: var(--text-white);
+            margin-bottom: 0.7rem;
+        }
+        
+        .education-card-new p {
+            color: var(--text-medium);
+            font-size: 0.9rem;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* 12. CONTACT SECTION */
+        #contact {
+            text-align: center;
+        }
+
+        #contact .container {
+            max-width: 800px;
+        }
+
+        #contact p {
+            font-size: 1.15rem;
+            margin-bottom: 2.5rem;
+        }
+        
+        #contact .social-links {
+            justify-content: center;
+        }
+
+        /* 13. FOOTER */
+        .footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            background-color: var(--primary-dark);
+            border-top: 1px solid var(--border-color);
+            color: var(--text-medium);
+            font-size: 0.9rem;
+            transition: all var(--transition-speed) var(--ease-out-quint);
+        }
+        
+        .footer p {
+            color: var(--text-medium);
+            margin: 0;
+            transition: color var(--transition-speed) var(--ease-out-quint);
+        }
+        
+        .footer .social-links {
+            margin-top: 1rem;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        /* 14. ANIMATION & RESPONSIVE */
+
+        /* New Scroll Animation Class */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px) scale(0.98);
+            filter: blur(5px);
+            transition: opacity 0.8s var(--ease-out-quint), 
+                        transform 0.8s var(--ease-out-quint), 
+                        filter 0.8s var(--ease-out-quint);
+            will-change: opacity, transform, filter;
+        }
+        
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            filter: blur(0);
+        }
+
+
+        @media (max-width: 992px) {
+            .hero-layout {
+                flex-direction: column;
+                gap: 3rem;
+            }
+            .hero-left {
+                max-width: 100%;
+                text-align: center;
+            }
+            .hero-right {
+                transform: none; 
+                width: 100%;
+                max-width: 400px;
+            }
+            .hero-main-title {
+                font-size: 3.5rem;
+            }
+            .hero-tagline {
+                font-size: 1.3rem;
+            }
+            .outcome-cards {
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            }
+            .github-card {
                 flex-direction: column;
                 text-align: center;
             }
-
-            .talk-section img {
-                margin-bottom: 20px;
-            }
-
-            .talk-section .content {
-                margin-left: 0;
+            .github-activity-map {
+                order: -1; /* Move map above content on small screens */
+                margin-bottom: 2rem;
             }
         }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+            h2.section-title {
+                font-size: 2.2rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+            h4 {
+                font-size: 1.1rem;
+            }
+
+            .nav-container {
+                height: 70px;
+            }
+            .nav-brand {
+                font-size: 1.5rem;
+            }
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: var(--navbar-bg);
+                backdrop-filter: blur(10px);
+                flex-direction: column;
+                align-items: center;
+                padding-top: 4rem;
+                gap: 3rem;
+                transition: left 0.4s ease-in-out, background-color var(--transition-speed) var(--ease-out-quint);
+            }
+            
+            .nav-menu.nav-open {
+                left: 0;
+            }
+            
+            .nav-link {
+                font-size: 1.3rem;
+                color: var(--text-white);
+            }
+            .nav-link::after {
+                background-color: var(--primary-accent);
+            }
+
+            .mobile-nav-toggle {
+                display: block;
+            }
+            
+            #hero {
+                padding-top: 100px;
+                min-height: 80vh;
+            }
+            
+            .hero-left {
+                text-align: center;
+            }
+
+            .hero-main-title {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+            .hero-tagline {
+                font-size: 1.15rem;
+            }
+            .hero-description {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+            
+            .hero-right .btn-group {
+                flex-direction: row;
+                flex-wrap: wrap; 
+                justify-content: center;
+            }
+            .hero-right .btn-group .btn-primary,
+            .hero-right .btn-group .btn-secondary {
+                width: auto;
+                flex-grow: 1; 
+            }
+
+            .btn-primary, .btn-secondary {
+                padding: 0.8rem 1.8rem;
+                font-size: 1rem;
+            }
+            .btn-secondary {
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+
+            .outcome-cards {
+                grid-template-columns: 1fr;
+            }
+            .outcome-card .metric {
+                font-size: 2.2rem;
+            }
+            
+            .github-card {
+                padding: 2rem;
+            }
+            .github-card-content h2 {
+                font-size: 1.8rem;
+            }
+            .github-card-content p {
+                font-size: 1rem;
+            }
+            .about-focus-grid {
+                grid-template-columns: 1fr; /* Stack about cards vertically */
+            }
+            .project-showcase {
+                grid-template-columns: 1fr; /* Stack projects vertically */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2.section-title {
+                font-size: 1.8rem;
+            }
+            .hero-main-title {
+                font-size: 2.5rem;
+            }
+            .hero-tagline {
+                font-size: 1rem;
+            }
+            .hero-description {
+                font-size: 0.9rem;
+            }
+            .hero-right .btn-group {
+                flex-direction: column;
+            }
+            .btn-secondary {
+                margin-top: 0; 
+            }
+            .project-showcase {
+                grid-template-columns: 1fr;
+            }
+            .github-card {
+                padding: 1.5rem;
+            }
+            .github-activity-map {
+                width: 120px;
+                height: 80px;
+            }
+        }
+
     </style>
 </head>
 
 <body>
-    <div class="banner">
-        <div>
-            <img src="img/fash_wit.png">
-            <h1><strong>Oluwole Fasakin</strong></h1>
-            <h2>DATA SCIENCE | PRODUCT DEVELOPMENT | BUSINESS INTELLIGENCE</h2>
-        </div>
-    </div>
 
-    <div class="header">
-        <h2>Web Solutions</h2>
-    </div>
-    <div class="section">
-        <div class="row">
-            <div class="col s12 m6 l3">
-                <div class="card">
-                    <div class="card-content center-align">
-                        <a href="ecommerce/home.html"><i class="fas fa-globe fa-3x"></i><br /><span>Website</span></a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-brand">Oluwole Fasakin</a>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#expertise" class="nav-link">Expertise</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#github" class="nav-link">GitHub</a></li> 
+                <li><a href="#brand-strategy" class="nav-link">Brands</a></li> 
+                <li><a href="#thought-leadership" class="nav-link">Research</a></li>
+                <li><a href="#education-awards" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Connect</a></li>
+                <li>
+                    <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light/dark mode">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="container">
+            <div class="hero-layout">
+                <div class="hero-left">
+                    <p class="hero-tagline">Application Architect & Data Engineering Lead</p>
+                    <h1 class="hero-main-title">Oluwole Fasakin</h1>
+                    <p class="hero-description">
+                        I build maintainable data-driven products and scalable engineering systems that turn analytics into measurable business outcomes.
+                        With 9 years of experience, I drive product adoption, ensure deployment reliability, and catalyze significant growth.
+                    </p>
+                    <div class="cta-group">
+                        <a href="#projects" class="btn-primary">View My Work</a>
+                        <a href="mailto:oluwolefasakin007@gmail.com" class="btn-secondary">Message Me</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/oluwole-fasakin-b05098b0/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/OluwoleDove" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/oaf_sage" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/4dtechcurious/" target="_blank" rel="noopener noreferrer" aria-label="TechCurious Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <img src="https://oluwoledove.github.io/img/fash_wit.png" alt="Oluwole Fasakin Headshot" class="hero-headshot"> 
+                    <h3>Oluwole Fasakin</h3>
+                    <p class="title">Application Architect & Data Engineering Lead</p>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Port Harcourt, Nigeria</p>
+                    <div class="links">
+                        <a href="https.www.linkedin.com/in/oluwole-fasakin-b05098b0/" target="_blank" rel="noopener noreferrer">LinkedIn</a> &bull;
+                        <a href="https.github.com/OluwoleDove" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                    
+                    <div class="outcome-cards">
+                        <div class="outcome-card">
+                            <div class="metric">+75%</div>
+                            <div class="description">Product adoption (analytics-driven roadmapping)</div>
+                        </div>
+                        <div class="outcome-card">
+                            <div class="metric">99.8%</div>
+                            <div class="description">Deployment reliability (CI + multi-env pipelines)</div>
+                        </div>
+                        <div class="outcome-card">
+                            <div class="metric">10x</div>
+                            <div class="description">Sales Lead & Smart Strategy</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col s12 m6 l3">
-                <div class="card">
-                    <div class="card-content center-align">
-                        <a href="https://www.witslens.com"><i class="fas fa-school fa-3x"></i><br /><span>e-learning</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6 l3">
-                <div class="card">
-                    <div class="card-content center-align">
-                        <a href="ecommerce/home.html"><i class="fas fa-cart-shopping fa-3x"></i><br /><span>e-commerce</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6 l3">
-                <div class="card">
-                    <div class="card-content center-align">
-                        <a href="https://www.witslens.com/trial.php"><i class="fas fa-users fa-3x"></i><br /><span>Forums</span></a>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="header">
-        <h2>Initiatives</h2>
-    </div>
-    <div class="section">
-        <div class="row">
-            <div class="col s12 m6">
-                <div class="card hoverable initiative-card" onclick="window.location.href='https://www.witslens.com'">
-                    <div class="card-image">
-                        <img src="img/witslens.png" alt="WitsLens Logo" class="responsive-img">
-                    </div>
-                    <div class="card-content">
-                        <h3>Witslens</h3>
-                        <p>Exploring learning through a clear lens.</p>
-                    </div>
+    <section id="about" class="reveal">
+        <div class="container">
+            <h2 class="section-title">My Approach</h2>
+            <p class="about-intro reveal">
+                With 9 years of hands-on experience, I excel at transforming complex data into strategic product decisions. My passion lies in leading high-performing teams to deliver secure, scalable digital solutions that optimize go-to-market performance.
+            </p>
+            <div class="about-focus-grid">
+                <div class="focus-card reveal">
+                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Data-Driven Strategy</h3>
+                    <p>Leveraging analytics (Power BI, Tableau, Python) to uncover insights that drive product roadmaps and lift adoption by over 75%.</p>
                 </div>
-            </div>
-            <div class="col s12 m6">
-                <div class="card hoverable initiative-card" onclick="window.location.href='techcurious.html'">
-                    <div class="card-image">
-                        <img src="img/techcurious.png" alt="TechCurious Logo" class="responsive-img">
-                    </div>
-                    <div class="card-content">
-                        <h3>TechCurious</h3>
-                        <p>Answering your spoken and unspoken technology curiosity.</p>
-                    </div>
+                <div class="focus-card reveal">
+                    <div class="icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Scalable Engineering</h3>
+                    <p>Architecting robust systems (Next.js, PHP, MERN) and DevOps pipelines that achieve 99.8% deployment reliability and cut critical incidents.</p>
+                </div>
+                <div class="focus-card reveal">
+                    <div class="icon"><i class="fas fa-users"></i></div>
+                    <h3>Product Leadership</h3>
+                    <p>Managing the full SDLC, from GTM strategy to stakeholder management, to translate research and user feedback into profitable, market-ready products.</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="header">
-        <h2>Previous Collaborations</h2>
-    </div>
-    <div class="section">
-        <ul class="collection">
-            <li class="collection-item"><a href="https://tvalton.com/" class="blue-text"><i class="fas fa-building"></i> TValton Services Nigeria Limited</a></li>
-            <li class="collection-item"><a href="https://tequant.ng/" class="blue-text"><i class="fas fa-building"></i> Te Quant</a></li>
-        </ul>
-    </div>
-
-    <div class="header">
-        <h2>Quick Enquiry?</h2>
-    </div>
-    <div class="talk-section">
-        <div class="content">
-            <h3>You can talk to Oluwole</h3>
-            <button onclick="window.location.href='mailto:oluwolefasakin007@gmail.com'">Message</button>
-        </div>
-        <img src="img/fash_tech.png" alt="Oluwole">
-    </div>
-
-    <div class="section">
-        <div class="row">
-            <div class="col s12 m4">
-                <ul class="collection">
-                    <li class="collection-item"><i class="fas fa-code"></i> <strong>Soft Skills</strong>
-                        <ul>
-                            <li>Project Management</li>
-                            <li>Corporate Communications</li>
-                            <li>Team Lead</li>
-                            <li>Critical Thinking</li>
-                            <li>Administration</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="col s12 m4">
-                <ul class="collection">
-                    <li class="collection-item"><i class="fas fa-cogs"></i> <strong>Tech Stack</strong>
-                        <ul>
-                            <li>MERN</li>
-                            <li>LAMP</li>
-                            <li>Data Modelling</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="col s12 m4">
-                <ul class="collection">
-                    <li class="collection-item"><i class="fas fa-chart-bar"></i> <strong>Visualization and Data Analysis Tools</strong>
-                        <ul>
-                            <li>Power BI</li>
-                            <li>Tableau</li>
-                            <li>Microsoft Excel</li>
-                            <li>Jupyter Note</li>
-                            <li>Google Colab</li>
-                        </ul>
-                    </li>
-                </ul>
+    <section id="expertise" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Core Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-category reveal">
+                    <h3>Engineering &amp; Data</h3>
+                    <ul class="expertise-list">
+                        <li class="expertise-tag">Python (Pandas, NumPy)</li>
+                        <li class="expertise-tag">PHP</li>
+                        <li class="expertise-tag">JavaScript</li>
+                        <li class="expertise-tag">Node.js</li>
+                        <li class="expertise-tag">React</li>
+                        <li class="expertise-tag">Next.js</li>
+                        <li class="expertise-tag">RESTful APIs</li>
+                        <li class="expertise-tag">ETL &amp; Data Wrangling</li>
+                        <li class="expertise-tag">Predictive Modelling</li>
+                        <li class="expertise-tag">Data Modelling</li>
+                        <li class="expertise-tag">MySQL</li>
+                        <li class="expertise-tag">MongoDB</li>
+                        <li class="expertise-tag">Docker</li>
+                    </ul>
+                </div>
+                <div class="expertise-category reveal">
+                    <h3>Tools &amp; Platforms</h3>
+                    <ul class="expertise-list">
+                        <li class="expertise-tag">Power BI</li>
+                        <li class="expertise-tag">Tableau</li>
+                        <li class="expertise-tag">Jira</li>
+                        <li class="expertise-tag">Git &amp; GitHub</li>
+                        <li class="expertise-tag">Postman</li>
+                        <li class="expertise-tag">AWS</li>
+                        <li class="expertise-tag">NVivo</li>
+                        <li class="expertise-tag">Colaboratory</li>
+                        <li class="expertise-tag">Microsoft Excel</li>
+                    </ul>
+                </div>
+                <div class="expertise-category reveal">
+                    <h3>Product &amp; Leadership</h3>
+                    <ul class="expertise-list">
+                        <li class="expertise-tag">Agile (Scrum/Kanban)</li>
+                        <li class="expertise-tag">SDLC</li>
+                        <li class="expertise-tag">Road Mapping (RICE/MoSCoW)</li>
+                        <li class="expertise-tag">GTM Strategy</li>
+                        <li class="expertise-tag">Stakeholder Management</li>
+                        <li class="expertise-tag">Project Management</li>
+                        <li class="expertise-tag">User-centered Design</li>
+                        <li class="expertise-tag">A/B Testing</li>
+                        <li class="expertise-tag">Team Leadership</li>
+                        <li class="expertise-tag">Technical Documentation</li>
+                        <li class="expertise-tag">Corporate Communications</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="header">
-        <h2>Oluwole on GitHub</h2>
-    </div>
-    <div class="section">
-        <div class="card">
-            <div class="card-image">
-                <a href="https://github.com/OluwoleDove"><img src="img/github.jpg" alt="Github Banner"></a>
-            </div>
-            <div class="card-content">
-                <p>Check out my projects and collaborations on GitHub.</p>
-            </div>
-        </div>
-    </div>
+    <section id="projects" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Projects &amp; Initiatives</h2>
+            <div class="project-showcase">
+                <div class="project-card-new reveal">
+                    <img src="https://oluwoledove.github.io/img/witslens.png" alt="WitsLens Platform" class="project-image"> 
+                    <div class="project-content-new">
+                        <h3>Witslens: EdTech Platform</h3>
+                        <h4>Exploring learning through a clear lens</h4>
+                        <p>Led the digital growth and operational strategy for this innovative e-learning platform. Focused on enhancing scalability, member experience, and analytics visibility.</p>
+                        <div class="project-actions">
+                            <a href="https://www.witslens.com" target="_blank" rel="noopener noreferrer" class="btn-link"><i class="fas fa-external-link-alt"></i> View Platform</a>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="footer">
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/oluwole-fasakin-b05098b0/"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a href="https://github.com/OluwoleDove"><i class="fab fa-github fa-2x"></i></a>
-            <a href="https://twitter.com/oaf_sage"><i class="fab fa-twitter fa-2x"></i></a>
+                <div class="project-card-new reveal">
+                    <img src="https://oluwoledove.github.io/img/techcurious.png" alt="TechCurious Community" class="project-image"> 
+                    <div class="project-content-new">
+                        <h3>TechCurious: Innovation Hub</h3>
+                        <h4>Answering your spoken and unspoken technology curiosity</h4>
+                        <p>Directed end-to-end digital strategy for this innovation community, managing budgets and leading cross-functional teams to boost brand engagement and educational outcomes.</p>
+                        <div class="project-actions">
+                            <a href="https://www.instagram.com/4dtechcurious/" target="_blank" rel="noopener noreferrer" class="btn-link"><i class="fab fa-instagram"></i> See Community</a>
+                            <a href="techcurious.html" class="btn-link"><i class="fas fa-info-circle"></i> Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-new reveal">
+                    <img src="https://placehold.co/600x400/007aff/FFFFFF?text=Bizhash" alt="Bizhash Platform" class="project-image"> 
+                    <div class="project-content-new">
+                        <h3>Bizhash</h3>
+                        <h4>Easing business operations for SMEs</h4>
+                        <p>An online platform designed to digitize manual paperwork and streamline inventory, customer, and sales tracking processes for small and medium-sized enterprises.</p>
+                        <div class="project-actions">
+                            <span class="btn-link" style="opacity: 0.7; cursor: not-allowed;"><i class="fas fa-rocket"></i> Launching Soon</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
-        <div>
-            <span>&copy Oluwole Fasakin</span>
+    </section>
+    
+    <section id="github" class="reveal">
+        <div class="container">
+            <div class="github-card reveal">
+                <div class="github-card-content">
+                    <h2>Explore My Open-Source Contributions</h2>
+                    <p>Dive into my code, projects, and data analysis scripts. See my technical skills in action and track my contributions over time.</p>
+                    <a href="https://github.com/OluwoleDove" target="_blank" rel="noopener noreferrer" class="btn-primary" style="margin-top: 2rem;">
+                        <i class="fab fa-github"></i> View Profile
+                    </a>
+                </div>
+                <div class="github-activity-map">
+                    <img src="https://placehold.co/180x120/1e1e1e/007aff?text=GitHub+Activity" alt="GitHub Activity Map"> 
+                </div>
+            </div>
         </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </section>
+
+    <section id="brand-strategy" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Brands I've Scaled</h2>
+            <div class="logo-carousel-container">
+                <div class="logo-carousel-track">
+                    <div class="brand-logo-card">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Brand 1">
+                            <div class="placeholder-logo">Brand One</div>
+                        </a>
+                    </div>
+                    <div class="brand-logo-card">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Brand 2">
+                            <div class="placeholder-logo">Brand Two</div>
+                        </a>
+                    </div>
+                    <div class="brand-logo-card">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Brand 3">
+                            <div class="placeholder-logo">Brand Three</div>
+                        </a>
+                    </div>
+                    <div class="brand-logo-card">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Brand 4">
+                            <div class="placeholder-logo">Brand Four</div>
+                        </a>
+                    </div>
+                    <div class="brand-logo-card">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Brand 5">
+                            <div class="placeholder-logo">Brand Five</div>
+                        </a>
+                    </div>
+                    <div class="brand-logo-card">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Brand 6">
+                            <div class="placeholder-logo">Brand Six</div>
+                        </a>
+                    </div>
+                    <div class="brand-logo-card">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Brand 1">
+                            <div class="placeholder-logo">Brand One</div>
+                        </a>
+                    </div>
+                    <div class="brand-logo-card">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Brand 2">
+                            <div class="placeholder-logo">Brand Two</div>
+                        </a>
+                    </div>
+                    <div class="brand-logo-card">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Brand 3">
+                            <div class="placeholder-logo">Brand Three</div>
+                        </a>
+                    </div>
+                    <div class="brand-logo-card">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Brand 4">
+                            <div class="placeholder-logo">Brand Four</div>
+                        </a>
+                    </div>
+                    <div class="brand-logo-card">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Brand 5">
+                            <div class="placeholder-logo">Brand Five</div>
+                        </a>
+                    </div>
+                    <div class="brand-logo-card">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Brand 6">
+                            <div class="placeholder-logo">Brand Six</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="thought-leadership" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Thought Leadership &amp; Research</h2>
+            <div class="research-grid">
+                <div class="research-item-new reveal">
+                    <h3><a href="https://doi.org/10.52872/001c.122439" target="_blank" rel="noopener noreferrer">COVID-19 and cholera co-infection and comorbidity in Africa and Asia: a systematic review and meta-analysis.</a></h3>
+                    <span class="journal">Journal of Global Health Economics and Policy, 2024</span>
+                    <p>Role: Research Analyst (meta-analysis, forest & bias plots). Provided critical data analysis and visualization for understanding complex health interactions.</p>
+                    <a href="https://doi.org/10.52872/001c.122439" target="_blank" rel="noopener noreferrer" class="doi-link"><i class="fas fa-flask"></i> Read Publication</a>
+                </div>
+                
+                <div class="research-item-new reveal">
+                    <h3><a href="https://doi.org/10.1186/s42522-024-00108-6" target="_blank" rel="noopener noreferrer">Holistic application of the one health approach in the prevention and control of rabies in Nigeria: a systematic review.</a></h3>
+                    <span class="journal">One Health Outlook, 2024</span>
+                    <p>Role: Research Contributor (DALY visualizations, regional impact mapping). Contributed impactful data visualizations to highlight regional health impact.</p>
+                    <a href="https://doi.org/10.1186/s42522-024-00108-6" target="_blank" rel="noopener noreferrer" class="doi-link"><i class="fas fa-flask"></i> Read Publication</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education-awards" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Qualifications</h2>
+            <div class="education-grid-new">
+                <div class="education-card-new reveal">
+                    <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>B.Eng., Electrical &amp; Electronics Engineering</h3>
+                    <p>The Federal University of Technology, Akure, NG</p>
+                    <p><em>2007 - 2012 (GPA: 4.11 / 5.0)</em></p>
+                </div>
+                <div class="education-card-new reveal">
+                    <div class="icon"><i class="fab fa-google"></i></div>
+                    <h3>Google UI/UX Certificate</h3>
+                    <p>Google (via Coursera)</p>
+                    <p><em>2025 (in progress)</em></p>
+                </div>
+                <div class="education-card-new reveal">
+                    <div class="icon"><i class="fas fa-award"></i></div>
+                    <h3>Bronze Winner (Team AFRANET)</h3>
+                    <p>CHARM Africa Engage 2024 Hackathon</p>
+                    <p><em>Recognized for innovative solutions.</em></p>
+                </div>
+                <div class="education-card-new reveal">
+                    <div class="icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Diploma in Project Management</h3>
+                    <p>Alison</p>
+                    <p><em>2016</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Let's Build Something Great</h2>
+            <p class="reveal">
+                Whether it's discussing a challenging project, exploring new opportunities, or just sharing insights on data and engineering, I'd love to connect.
+                Reach out, and let's create impactful digital experiences together.
+            </p>
+            <a href="mailto:oluwolefasakin007@gmail.com" class="btn-primary reveal">
+                <i class="fas fa-envelope"></i> Email Me Directly
+            </a>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links reveal">
+                <a href="https://www.linkedin.com/in/oluwole-fasakin-b05098b0/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/OluwoleDove" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/oaf_sage" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https.www.instagram.com/4dtechcurious/" target="_blank" rel="noopener noreferrer" aria-label="TechCurious Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2025 Oluwole Fasakin. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // --- 1. Mobile Navigation Toggle ---
+            const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            const toggleMenu = () => {
+                navMenu.classList.toggle('nav-open');
+                const icon = mobileNavToggle.querySelector('i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            };
+
+            mobileNavToggle.addEventListener('click', toggleMenu);
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navMenu.classList.contains('nav-open')) {
+                        toggleMenu();
+                    }
+                });
+            });
+
+            // --- 2. Smooth Scrolling ---
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if(target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // --- 3. Light/Dark Mode Theme Toggle ---
+            const themeToggleBtn = document.getElementById('theme-toggle');
+            const body = document.body;
+            const preferredTheme = localStorage.getItem('theme');
+            const systemTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+
+            const setTheme = (theme) => {
+                if (theme === 'light') {
+                    body.classList.add('light-mode');
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    body.classList.remove('light-mode');
+                    localStorage.setItem('theme', 'dark');
+                }
+            };
+
+            // Set initial theme
+            setTheme(preferredTheme || systemTheme);
+
+            // Toggle theme on button click
+            themeToggleBtn.addEventListener('click', () => {
+                const currentTheme = body.classList.contains('light-mode') ? 'light' : 'dark';
+                setTheme(currentTheme === 'light' ? 'dark' : 'light');
+            });
+
+            // --- 4. Scroll Reveal Animations (New Sleek Version) ---
+            const revealElements = document.querySelectorAll('.reveal');
+
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Unobserve after it's visible
+                    }
+                });
+            }, {
+                threshold: 0.1 // Trigger when 10% of the element is visible
+            });
+
+            revealElements.forEach(el => {
+                revealObserver.observe(el);
+            });
+            
+            // --- 5. Pause Carousel on Hover ---
+            const carouselTrack = document.querySelector('.logo-carousel-track');
+            if (carouselTrack) {
+                carouselTrack.addEventListener('mouseenter', () => {
+                    carouselTrack.style.animationPlayState = 'paused';
+                });
+                carouselTrack.addEventListener('mouseleave', () => {
+                    carouselTrack.style.animationPlayState = 'running';
+                });
+            }
+
+        });
+    </script>
+
 </body>
-
 </html>

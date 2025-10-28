@@ -12,7 +12,7 @@ export const listCourses = () => async (dispatch) => {
     try {
         dispatch({ type: COURSE_LIST_REQUEST });
 
-        const { data } = await axios.get('https://witslens.com/backend/get_courses.php');
+        const { data } = await axios.get('http://localhost:8000/get_courses');
 
         dispatch({
             type: COURSE_LIST_SUCCESS,
@@ -32,7 +32,7 @@ export const listCourseDetails = (id) => async (dispatch) => {
     try {
         dispatch({ type: COURSE_DETAILS_REQUEST });
 
-        const { data } = await axios.get(`https://witslens.com/backend/get_course_details.php?id=${id}`);
+        const { data } = await axios.get(`http://localhost:8000/get_course_details.php?id=${id}`);
 
         dispatch({
             type: COURSE_DETAILS_SUCCESS,
