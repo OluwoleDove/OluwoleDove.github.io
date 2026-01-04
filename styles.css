@@ -993,6 +993,94 @@ body.light-mode .brand-logo-card a:hover {
     transition: width 1s var(--ease-out-quint);
 }
 
+/* 11.5. DEPLOYMENTS SECTION */
+#deployments {
+    background-color: var(--primary-dark);
+    transition: background-color var(--transition-medium) var(--ease-smooth);
+}
+
+.deployments-intro {
+    text-align: center;
+    font-size: 1.15rem;
+    color: var(--text-light);
+    max-width: 700px;
+    margin: 0 auto 3rem auto;
+}
+
+.deployments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.deployment-card {
+    background: var(--secondary-dark);
+    border-radius: 15px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--border-color);
+    text-align: center;
+    transition: transform var(--transition-medium) var(--ease-smooth),
+                box-shadow var(--transition-medium) var(--ease-smooth),
+                background-color var(--transition-medium) var(--ease-smooth),
+                border-color var(--transition-medium) var(--ease-smooth);
+}
+
+.deployment-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-card-hover);
+}
+
+.deployment-icon {
+    font-size: 3rem;
+    color: var(--primary-accent);
+    margin-bottom: 1.5rem;
+    transition: transform var(--transition-speed) var(--ease-smooth);
+}
+
+.deployment-card:hover .deployment-icon {
+    transform: scale(1.1);
+}
+
+.deployment-card h3 {
+    font-size: 1.5rem;
+    color: var(--text-white);
+    margin-bottom: 1rem;
+}
+
+.deployment-card p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.deployment-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: center;
+}
+
+.deployment-tag {
+    background-color: var(--tag-bg);
+    color: var(--tag-text);
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid var(--tag-border);
+    transition: background-color var(--transition-speed) var(--ease-smooth),
+                color var(--transition-speed) var(--ease-smooth),
+                border-color var(--transition-speed) var(--ease-smooth);
+}
+
+.deployment-card:hover .deployment-tag {
+    background-color: rgba(0, 122, 255, 0.15);
+    border-color: var(--primary-accent);
+    color: var(--primary-accent);
+}
+
 /* 12. CLIENT WORK SECTION */
 #client-work {
     background-color: var(--primary-dark);
