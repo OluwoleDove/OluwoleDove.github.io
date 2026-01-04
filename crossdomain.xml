@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd">
+<!--
+    Cross-Domain Policy for Oluwole Fasakin Portfolio
+    https://oluwoledove.github.io/
+
+    This file allows cross-domain access for Flash/Flex applications and other clients
+    that respect this policy. While Flash is deprecated, some legacy systems and
+    analytics tools may still reference this file.
+-->
+<cross-domain-policy>
+    <!-- Meta policy for this domain -->
+    <site-control permitted-cross-domain-policies="master-only"/>
+
+    <!-- Allow access from all domains for public portfolio content -->
+    <allow-access-from domain="*.github.io"/>
+    <allow-access-from domain="*.github.com"/>
+
+    <!-- Allow access from CDN and external resources -->
+    <allow-access-from domain="*.googleapis.com"/>
+    <allow-access-from domain="*.gstatic.com"/>
+    <allow-access-from domain="*.cloudflare.com"/>
+    <allow-access-from domain="*.cdnjs.cloudflare.com"/>
+
+    <!-- Allow access from social media platforms for sharing -->
+    <allow-access-from domain="*.linkedin.com"/>
+    <allow-access-from domain="*.twitter.com"/>
+    <allow-access-from domain="*.facebook.com"/>
+    <allow-access-from domain="*.instagram.com"/>
+
+    <!-- Allow access from analytics and monitoring -->
+    <allow-access-from domain="*.google-analytics.com"/>
+    <allow-access-from domain="*.googletagmanager.com"/>
+
+    <!-- Allow HTTP headers for CORS-like functionality -->
+    <allow-http-request-headers-from domain="*" headers="*" secure="true"/>
+</cross-domain-policy>

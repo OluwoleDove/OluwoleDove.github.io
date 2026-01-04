@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:media="http://search.yahoo.com/mrss/">
+
+    <channel>
+        <title>Oluwole Fasakin - Application Architect & Data Engineering Lead</title>
+        <link>https://oluwoledove.github.io/</link>
+        <description>Updates, projects, and insights from Oluwole Fasakin - Elite Application Architect & Data Engineering Lead with 9+ years experience delivering data-driven products and scalable engineering systems.</description>
+        <language>en-US</language>
+        <lastBuildDate>Sat, 04 Jan 2026 00:00:00 GMT</lastBuildDate>
+        <pubDate>Sat, 04 Jan 2026 00:00:00 GMT</pubDate>
+        <ttl>1440</ttl>
+        <atom:link href="https://oluwoledove.github.io/rss.xml" rel="self" type="application/rss+xml"/>
+        <image>
+            <url>https://oluwoledove.github.io/img/fash_wit.png</url>
+            <title>Oluwole Fasakin</title>
+            <link>https://oluwoledove.github.io/</link>
+            <width>144</width>
+            <height>144</height>
+        </image>
+        <managingEditor>oluwolefasakin007@gmail.com (Oluwole Fasakin)</managingEditor>
+        <webMaster>oluwolefasakin007@gmail.com (Oluwole Fasakin)</webMaster>
+        <copyright>Copyright 2025-2026 Oluwole Fasakin. All rights reserved.</copyright>
+        <category>Technology</category>
+        <category>Software Development</category>
+        <category>Data Engineering</category>
+        <category>Application Architecture</category>
+
+        <item>
+            <title>Portfolio Update: New Brands & Client Work Added</title>
+            <link>https://oluwoledove.github.io/</link>
+            <guid isPermaLink="true">https://oluwoledove.github.io/#portfolio-update-2026</guid>
+            <pubDate>Sat, 04 Jan 2026 00:00:00 GMT</pubDate>
+            <dc:creator>Oluwole Fasakin</dc:creator>
+            <description>Excited to announce major updates to my portfolio showcasing work with IBM, Smooth Apply AI, LSTG, PHC CivcX, T.Valton, and EPC. Also featuring new client work for La Necar Logistics LLC including two web solutions and a highly effective lead magnet system.</description>
+            <content:encoded><![CDATA[
+                <p>I'm thrilled to share major updates to my professional portfolio:</p>
+                <h3>Brands I've Scaled</h3>
+                <ul>
+                    <li><strong>Smooth Apply AI</strong> - AI-powered job application platform</li>
+                    <li><strong>LSTG</strong> - Digital transformation initiative</li>
+                    <li><strong>IBM</strong> - Enterprise technology consulting</li>
+                    <li><strong>PHC CivcX</strong> - Civic technology solutions</li>
+                    <li><strong>T.Valton</strong> - Brand growth strategy</li>
+                    <li><strong>EPC</strong> - Engineering and project consulting</li>
+                </ul>
+                <h3>Client Work</h3>
+                <p>Delivered comprehensive solutions for La Necar Logistics LLC including custom logistics management applications and a high-converting lead magnet system.</p>
+            ]]></content:encoded>
+            <category>portfolio</category>
+            <category>brands</category>
+            <category>client work</category>
+            <media:content url="https://oluwoledove.github.io/img/fash_wit.png" medium="image" type="image/png" width="400" height="400"/>
+        </item>
+
+        <item>
+            <title>WitsLens: EdTech Platform - Digital Growth Strategy</title>
+            <link>https://oluwoledove.github.io/#projects</link>
+            <guid isPermaLink="true">https://oluwoledove.github.io/#witslens-edtech</guid>
+            <pubDate>Sat, 15 Jun 2024 00:00:00 GMT</pubDate>
+            <dc:creator>Oluwole Fasakin</dc:creator>
+            <description>Led the digital growth and operational strategy for WitsLens, an innovative e-learning platform. Focused on enhancing scalability, member experience, and analytics visibility.</description>
+            <content:encoded><![CDATA[
+                <p>WitsLens is an innovative EdTech platform designed to help learners explore knowledge through a clear lens.</p>
+                <p>As the digital strategy lead, I focused on:</p>
+                <ul>
+                    <li>Platform scalability and performance optimization</li>
+                    <li>User experience enhancement</li>
+                    <li>Analytics visibility and data-driven decision making</li>
+                    <li>Member engagement and retention strategies</li>
+                </ul>
+            ]]></content:encoded>
+            <category>EdTech</category>
+            <category>e-learning</category>
+            <category>project</category>
+            <media:content url="https://oluwoledove.github.io/img/witslens.png" medium="image" type="image/png"/>
+        </item>
+
+        <item>
+            <title>TechCurious: Innovation Community Launch</title>
+            <link>https://oluwoledove.github.io/techcurious.html</link>
+            <guid isPermaLink="true">https://oluwoledove.github.io/techcurious</guid>
+            <pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate>
+            <dc:creator>Oluwole Fasakin</dc:creator>
+            <description>Directed end-to-end digital strategy for TechCurious, an innovation community managing budgets and leading cross-functional teams to boost brand engagement and educational outcomes.</description>
+            <content:encoded><![CDATA[
+                <p>TechCurious answers your spoken and unspoken technology curiosity.</p>
+                <p>Key achievements:</p>
+                <ul>
+                    <li>End-to-end digital strategy development</li>
+                    <li>Cross-functional team leadership</li>
+                    <li>Brand engagement optimization</li>
+                    <li>Educational content delivery</li>
+                </ul>
+            ]]></content:encoded>
+            <category>innovation</category>
+            <category>technology</category>
+            <category>community</category>
+            <media:content url="https://oluwoledove.github.io/img/techcurious.png" medium="image" type="image/png"/>
+        </item>
+
+        <item>
+            <title>Research Publication: COVID-19 and Cholera Co-infection</title>
+            <link>https://doi.org/10.52872/001c.122439</link>
+            <guid isPermaLink="false">doi:10.52872/001c.122439</guid>
+            <pubDate>Mon, 15 Jan 2024 00:00:00 GMT</pubDate>
+            <dc:creator>Oluwole Fasakin</dc:creator>
+            <description>Published research on COVID-19 and cholera co-infection and comorbidity in Africa and Asia: a systematic review and meta-analysis. Journal of Global Health Economics and Policy, 2024.</description>
+            <category>research</category>
+            <category>publication</category>
+            <category>health</category>
+        </item>
+
+        <item>
+            <title>Research Publication: Rabies Prevention in Nigeria</title>
+            <link>https://doi.org/10.1186/s42522-024-00108-6</link>
+            <guid isPermaLink="false">doi:10.1186/s42522-024-00108-6</guid>
+            <pubDate>Tue, 20 Feb 2024 00:00:00 GMT</pubDate>
+            <dc:creator>Oluwole Fasakin</dc:creator>
+            <description>Contributed to research on holistic application of the One Health approach in the prevention and control of rabies in Nigeria. One Health Outlook, 2024.</description>
+            <category>research</category>
+            <category>publication</category>
+            <category>One Health</category>
+        </item>
+
+    </channel>
+</rss>

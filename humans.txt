@@ -1,0 +1,79 @@
+/* TEAM */
+
+Developer & Designer: Oluwole Fasakin
+Title: Application Architect & Data Engineering Lead
+Contact: oluwolefasakin007@gmail.com
+Twitter: @oaf_sage
+LinkedIn: oluwole-fasakin-b05098b0
+GitHub: OluwoleDove
+From: Port Harcourt, Nigeria
+
+/* THANKS */
+
+Font: Google Fonts (Inter, Montserrat)
+Icons: Font Awesome 6.5
+Hosting: GitHub Pages
+Analytics: Google Analytics
+Charts: Chart.js
+
+/* SITE */
+
+Last update: 2026/01/04
+Language: English, Spanish
+Doctype: HTML5
+IDE: Visual Studio Code
+Standards: HTML5, CSS3, ES6+
+Components: Responsive Design, Dark/Light Mode, PWA Ready
+Frameworks: Vanilla JavaScript
+SEO: Comprehensive schema.org structured data
+
+/* SKILLS */
+
+Languages: Python, PHP, JavaScript, Node.js, SQL
+Frameworks: React, Next.js, Express.js
+Data: Power BI, Tableau, Pandas, NumPy
+Databases: MySQL, MongoDB, PostgreSQL
+Cloud: AWS, Vercel, Render, AWS Amplify
+DevOps: Docker, Git, CI/CD
+Product: Agile, Scrum, Kanban, SDLC
+
+/* BRANDS SCALED */
+
+Smooth Apply AI - AI-powered job application platform
+LSTG - Digital transformation initiative
+IBM - Enterprise technology consulting
+PHC CivcX - Civic technology solutions
+T.Valton - Brand growth strategy
+EPC - Engineering and project consulting
+
+/* ACHIEVEMENTS */
+
+9+ years professional experience
+75%+ product adoption increase
+99.8% deployment reliability
+Bronze Winner - CHARM Africa Engage 2024 Hackathon
+2 Peer-reviewed research publications
+B.Eng., Electrical & Electronics Engineering (GPA: 4.11/5.0)
+Google UI/UX Certificate (in progress)
+Diploma in Project Management
+
+/* PROJECTS */
+
+WitsLens: EdTech Platform - www.witslens.com
+TechCurious: Innovation Hub - @4dtechcurious
+La Necar Logistics LLC: 2 Web Solutions
+Lead Magnet System: Growth Marketing
+
+/* LANGUAGES */
+
+English - Native (Speaking, Reading, Writing)
+Spanish - Proficient (Speaking, Reading, Writing)
+
+/* CONNECT */
+
+Portfolio: https://oluwoledove.github.io
+LinkedIn: https://www.linkedin.com/in/oluwole-fasakin-b05098b0/
+GitHub: https://github.com/OluwoleDove
+Twitter: https://twitter.com/oaf_sage
+Instagram: https://www.instagram.com/4dtechcurious/
+Email: oluwolefasakin007@gmail.com

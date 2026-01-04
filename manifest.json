@@ -1,0 +1,77 @@
+{
+    "name": "Oluwole Fasakin - Application Architect & Data Engineering Lead",
+    "short_name": "Oluwole Fasakin",
+    "description": "Elite Application Architect & Data Engineering Lead with 9+ years experience. Specializing in scalable systems, data-driven products, and brand growth strategy.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#1e1e1e",
+    "theme_color": "#007aff",
+    "orientation": "portrait-primary",
+    "scope": "/",
+    "lang": "en-US",
+    "dir": "ltr",
+    "categories": ["business", "technology", "portfolio"],
+    "icons": [
+        {
+            "src": "/img/favicon.ico",
+            "sizes": "48x48",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "/img/fash_wit.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/img/fash_wit.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/img/fash_wit.png",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Oluwole Fasakin Portfolio Homepage"
+        }
+    ],
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "shortcuts": [
+        {
+            "name": "View Projects",
+            "short_name": "Projects",
+            "description": "View my portfolio projects",
+            "url": "/#projects",
+            "icons": [{ "src": "/img/favicon.ico", "sizes": "48x48" }]
+        },
+        {
+            "name": "Contact Me",
+            "short_name": "Contact",
+            "description": "Get in touch",
+            "url": "/#contact",
+            "icons": [{ "src": "/img/favicon.ico", "sizes": "48x48" }]
+        },
+        {
+            "name": "View Expertise",
+            "short_name": "Skills",
+            "description": "View my technical skills",
+            "url": "/#expertise",
+            "icons": [{ "src": "/img/favicon.ico", "sizes": "48x48" }]
+        }
+    ],
+    "iarc_rating_id": "",
+    "share_target": {
+        "action": "/#contact",
+        "method": "GET",
+        "params": {
+            "title": "title",
+            "text": "text",
+            "url": "url"
+        }
+    }
+}
