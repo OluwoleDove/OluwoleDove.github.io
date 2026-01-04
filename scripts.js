@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- 9. Subtle hover effects for cards ---
-    const cards = document.querySelectorAll('.focus-card, .expertise-category, .project-card-new, .client-card, .research-item-new, .education-card-new, .language-card');
+    const cards = document.querySelectorAll('.focus-card, .expertise-category, .project-card-new, .client-card, .research-item-new, .education-card-new, .language-card, .deployment-card');
 
     cards.forEach(card => {
         card.addEventListener('mouseenter', function() {
