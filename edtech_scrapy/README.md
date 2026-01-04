@@ -1,1 +1,0 @@
-Host the backend in your php server XAMPP or WAMPP
