@@ -1,0 +1,97 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "title": "Oluwole Fasakin - Application Architect & Data Engineering Lead",
+    "home_page_url": "https://oluwoledove.github.io/",
+    "feed_url": "https://oluwoledove.github.io/feed.json",
+    "description": "Updates, projects, and insights from Oluwole Fasakin - Elite Application Architect & Data Engineering Lead with 9+ years experience delivering data-driven products and scalable engineering systems.",
+    "icon": "https://oluwoledove.github.io/img/fash_wit.png",
+    "favicon": "https://oluwoledove.github.io/img/favicon.ico",
+    "language": "en-US",
+    "authors": [
+        {
+            "name": "Oluwole Fasakin",
+            "url": "https://oluwoledove.github.io/",
+            "avatar": "https://oluwoledove.github.io/img/fash_wit.png"
+        }
+    ],
+    "items": [
+        {
+            "id": "https://oluwoledove.github.io/#portfolio-update-2026",
+            "url": "https://oluwoledove.github.io/",
+            "title": "Portfolio Update: New Brands & Client Work Added",
+            "content_html": "<p>Excited to announce major updates to my portfolio showcasing work with IBM, Smooth Apply AI, LSTG, PHC CivcX, T.Valton, and EPC. Also featuring new client work for La Necar Logistics LLC.</p>",
+            "summary": "Portfolio updated with new brand partnerships and client work including IBM, Smooth Apply AI, and logistics solutions.",
+            "date_published": "2026-01-04T00:00:00Z",
+            "date_modified": "2026-01-04T00:00:00Z",
+            "authors": [
+                {
+                    "name": "Oluwole Fasakin"
+                }
+            ],
+            "tags": ["portfolio", "brands", "client work", "IBM", "logistics"],
+            "language": "en"
+        },
+        {
+            "id": "https://oluwoledove.github.io/#witslens-edtech",
+            "url": "https://oluwoledove.github.io/#projects",
+            "title": "WitsLens: EdTech Platform Launch",
+            "content_html": "<p>Led the digital growth and operational strategy for WitsLens, an innovative e-learning platform. Focused on enhancing scalability, member experience, and analytics visibility.</p>",
+            "summary": "WitsLens EdTech platform - exploring learning through a clear lens.",
+            "date_published": "2024-06-15T00:00:00Z",
+            "authors": [
+                {
+                    "name": "Oluwole Fasakin"
+                }
+            ],
+            "tags": ["EdTech", "e-learning", "project", "education"],
+            "language": "en"
+        },
+        {
+            "id": "https://oluwoledove.github.io/#techcurious-launch",
+            "url": "https://oluwoledove.github.io/techcurious.html",
+            "title": "TechCurious: Innovation Hub Launch",
+            "content_html": "<p>Directed end-to-end digital strategy for TechCurious, an innovation community managing budgets and leading cross-functional teams to boost brand engagement and educational outcomes.</p>",
+            "summary": "TechCurious - answering your spoken and unspoken technology curiosity.",
+            "date_published": "2024-03-01T00:00:00Z",
+            "authors": [
+                {
+                    "name": "Oluwole Fasakin"
+                }
+            ],
+            "tags": ["innovation", "technology", "community", "education"],
+            "language": "en"
+        },
+        {
+            "id": "https://doi.org/10.52872/001c.122439",
+            "url": "https://doi.org/10.52872/001c.122439",
+            "external_url": "https://doi.org/10.52872/001c.122439",
+            "title": "COVID-19 and Cholera Co-infection Research Publication",
+            "content_html": "<p>Published research on COVID-19 and cholera co-infection and comorbidity in Africa and Asia: a systematic review and meta-analysis. Journal of Global Health Economics and Policy, 2024.</p>",
+            "summary": "Peer-reviewed research publication on health interactions.",
+            "date_published": "2024-01-15T00:00:00Z",
+            "authors": [
+                {
+                    "name": "Oluwole Fasakin"
+                }
+            ],
+            "tags": ["research", "publication", "health", "meta-analysis"],
+            "language": "en"
+        },
+        {
+            "id": "https://doi.org/10.1186/s42522-024-00108-6",
+            "url": "https://doi.org/10.1186/s42522-024-00108-6",
+            "external_url": "https://doi.org/10.1186/s42522-024-00108-6",
+            "title": "One Health Approach for Rabies Prevention in Nigeria",
+            "content_html": "<p>Contributed to research on holistic application of the One Health approach in the prevention and control of rabies in Nigeria. One Health Outlook, 2024.</p>",
+            "summary": "Research contribution on rabies prevention using One Health approach.",
+            "date_published": "2024-02-20T00:00:00Z",
+            "authors": [
+                {
+                    "name": "Oluwole Fasakin"
+                }
+            ],
+            "tags": ["research", "publication", "health", "One Health"],
+            "language": "en"
+        }
+    ]
+}

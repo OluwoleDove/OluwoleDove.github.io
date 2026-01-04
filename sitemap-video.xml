@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+    <!-- Video Content Sitemap -->
+    <!-- Add video entries as you create video content -->
+
+    <!-- Example structure for future video content -->
+    <!--
+    <url>
+        <loc>https://oluwoledove.github.io/</loc>
+        <video:video>
+            <video:thumbnail_loc>https://oluwoledove.github.io/img/video-thumbnail.jpg</video:thumbnail_loc>
+            <video:title>Oluwole Fasakin - Application Architecture Overview</video:title>
+            <video:description>Learn about application architecture and data engineering best practices from Oluwole Fasakin.</video:description>
+            <video:content_loc>https://oluwoledove.github.io/video/intro.mp4</video:content_loc>
+            <video:player_loc>https://oluwoledove.github.io/video-player</video:player_loc>
+            <video:duration>180</video:duration>
+            <video:publication_date>2026-01-04</video:publication_date>
+            <video:family_friendly>yes</video:family_friendly>
+            <video:live>no</video:live>
+            <video:tag>application architecture</video:tag>
+            <video:tag>data engineering</video:tag>
+            <video:tag>software development</video:tag>
+            <video:category>Technology</video:category>
+        </video:video>
+    </url>
+    -->
+
+    <!-- E-commerce Demo Video (if exists) -->
+    <url>
+        <loc>https://oluwoledove.github.io/ecommerce/home.html</loc>
+        <video:video>
+            <video:thumbnail_loc>https://oluwoledove.github.io/img/witslens.png</video:thumbnail_loc>
+            <video:title>City Gym Equipment E-commerce Platform Demo</video:title>
+            <video:description>Demonstration of the City Gym Equipment e-commerce platform built by Oluwole Fasakin, showcasing product filtering, cart functionality, and checkout process.</video:description>
+            <video:content_loc>https://oluwoledove.github.io/ecommerce/video/demo.mp4</video:content_loc>
+            <video:duration>120</video:duration>
+            <video:publication_date>2026-01-04</video:publication_date>
+            <video:family_friendly>yes</video:family_friendly>
+            <video:live>no</video:live>
+            <video:tag>e-commerce</video:tag>
+            <video:tag>web development</video:tag>
+            <video:tag>portfolio project</video:tag>
+            <video:category>Technology</video:category>
+        </video:video>
+    </url>
+
+</urlset>

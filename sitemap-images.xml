@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+    <!-- Homepage Images -->
+    <url>
+        <loc>https://oluwoledove.github.io/</loc>
+
+        <image:image>
+            <image:loc>https://oluwoledove.github.io/img/fash_wit.png</image:loc>
+            <image:title>Oluwole Fasakin - Application Architect & Data Engineering Lead</image:title>
+            <image:caption>Professional headshot of Oluwole Fasakin, elite application architect and data engineering lead with 9+ years experience</image:caption>
+            <image:geo_location>Port Harcourt, Nigeria</image:geo_location>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://oluwoledove.github.io/img/fash_tech.png</image:loc>
+            <image:title>Oluwole Fasakin Technical Portrait</image:title>
+            <image:caption>Oluwole Fasakin - Technology and data engineering professional</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://oluwoledove.github.io/img/fash_tech.jpg</image:loc>
+            <image:title>Oluwole Fasakin Professional Photo</image:title>
+            <image:caption>Professional technology consultant and software architect</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://oluwoledove.github.io/img/witslens.png</image:loc>
+            <image:title>WitsLens EdTech Platform</image:title>
+            <image:caption>WitsLens - Innovative e-learning platform designed and developed by Oluwole Fasakin</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://oluwoledove.github.io/img/techcurious.png</image:loc>
+            <image:title>TechCurious Innovation Hub</image:title>
+            <image:caption>TechCurious - Technology innovation community and educational initiative</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://oluwoledove.github.io/img/ml.jpg</image:loc>
+            <image:title>Machine Learning Expertise</image:title>
+            <image:caption>Machine learning and AI capabilities - data science expertise</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://oluwoledove.github.io/img/network.jpg</image:loc>
+            <image:title>Network Architecture</image:title>
+            <image:caption>Network and systems architecture visualization</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://oluwoledove.github.io/img/web.jpg</image:loc>
+            <image:title>Web Development</image:title>
+            <image:caption>Web development and full-stack engineering</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://oluwoledove.github.io/img/da.jpg</image:loc>
+            <image:title>Data Analytics</image:title>
+            <image:caption>Data analytics and business intelligence visualization</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://oluwoledove.github.io/img/building_block.jpg</image:loc>
+            <image:title>Building Blocks of Technology</image:title>
+            <image:caption>Foundational technology and architecture building blocks</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://oluwoledove.github.io/img/github.jpg</image:loc>
+            <image:title>GitHub Contributions</image:title>
+            <image:caption>Open source contributions and GitHub activity</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://oluwoledove.github.io/img/favicon.ico</image:loc>
+            <image:title>Oluwole Fasakin Logo</image:title>
+            <image:caption>Portfolio favicon and brand icon</image:caption>
+        </image:image>
+
+    </url>
+
+    <!-- TechCurious Page Images -->
+    <url>
+        <loc>https://oluwoledove.github.io/techcurious.html</loc>
+
+        <image:image>
+            <image:loc>https://oluwoledove.github.io/img/techcurious.png</image:loc>
+            <image:title>TechCurious Innovation Community</image:title>
+            <image:caption>TechCurious - Innovation hub answering technology curiosity</image:caption>
+        </image:image>
+
+    </url>
+
+    <!-- E-commerce Platform Images -->
+    <url>
+        <loc>https://oluwoledove.github.io/ecommerce/home.html</loc>
+
+        <image:image>
+            <image:loc>https://oluwoledove.github.io/ecommerce/img/logo.png</image:loc>
+            <image:title>City Gym Equipment Logo</image:title>
+            <image:caption>E-commerce platform for gym equipment</image:caption>
+        </image:image>
+
+    </url>
+
+</urlset>

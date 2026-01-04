@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+
+    <!-- Short name (max 16 characters) displayed in browser search bar -->
+    <ShortName>Oluwole Fasakin</ShortName>
+
+    <!-- Full description of the search engine -->
+    <Description>Search Oluwole Fasakin's portfolio - Application Architect & Data Engineering Lead. Find projects, expertise, research publications, and professional information.</Description>
+
+    <!-- Tags for categorization -->
+    <Tags>portfolio developer architect data engineering software projects</Tags>
+
+    <!-- Contact email for the search engine -->
+    <Contact>oluwolefasakin007@gmail.com</Contact>
+
+    <!-- URL template for search queries -->
+    <Url type="text/html"
+         method="get"
+         template="https://www.google.com/search?q=site:oluwoledove.github.io+{searchTerms}"/>
+
+    <!-- Suggestions URL (Google-powered) -->
+    <Url type="application/x-suggestions+json"
+         template="https://suggestqueries.google.com/complete/search?client=firefox&amp;ds=site:oluwoledove.github.io&amp;q={searchTerms}"/>
+
+    <!-- RSS feed URL -->
+    <Url type="application/rss+xml"
+         rel="results"
+         template="https://oluwoledove.github.io/rss.xml"/>
+
+    <!-- Image for the search engine (favicon) -->
+    <Image width="16" height="16" type="image/x-icon">https://oluwoledove.github.io/img/favicon.ico</Image>
+    <Image width="64" height="64" type="image/png">https://oluwoledove.github.io/img/fash_wit.png</Image>
+
+    <!-- Input encoding -->
+    <InputEncoding>UTF-8</InputEncoding>
+    <OutputEncoding>UTF-8</OutputEncoding>
+
+    <!-- Language -->
+    <Language>en-US</Language>
+
+    <!-- Syndication right (open for anyone to use) -->
+    <SyndicationRight>open</SyndicationRight>
+
+    <!-- Adult content flag -->
+    <AdultContent>false</AdultContent>
+
+    <!-- Developer/attribution -->
+    <Developer>Oluwole Fasakin</Developer>
+    <Attribution>Search powered by Google. Portfolio by Oluwole Fasakin.</Attribution>
+
+    <!-- Update URL (where browser can check for updates) -->
+    <moz:UpdateUrl>https://oluwoledove.github.io/opensearch.xml</moz:UpdateUrl>
+    <moz:IconUpdateUrl>https://oluwoledove.github.io/img/favicon.ico</moz:IconUpdateUrl>
+    <moz:SearchForm>https://oluwoledove.github.io/</moz:SearchForm>
+
+</OpenSearchDescription>
