@@ -1899,9 +1899,9 @@ body.light-mode .navbar {
     height: 84%;
     object-fit: cover;
     object-position: center;
-    border: 1px solid var(--border-color);
-    border-radius: 0.8rem;
-    box-shadow: var(--shadow-card-hover);
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .approach-visual-tile,
