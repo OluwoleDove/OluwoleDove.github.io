@@ -6,7 +6,7 @@
             "@id": "https://oluwoledove.github.io/#website",
             "url": "https://oluwoledove.github.io/",
             "name": "Oluwole Fasakin Portfolio",
-            "description": "Solutions architecture, cloud engineering, data products, and selected projects by Oluwole Fasakin in Nigeria.",
+            "description": "Portfolio of RBAC systems for everyday business operations, deployed on the cloud, by Oluwole Fasakin in Nigeria.",
             "publisher": {
                 "@id": "https://oluwoledove.github.io/#person"
             },
@@ -30,7 +30,7 @@
                 "height": 400,
                 "caption": "Oluwole Fasakin - Solutions Architect"
             },
-            "description": "Solutions Architect based in Port Harcourt, Nigeria, designing scalable software systems, cloud platforms, and data-driven products.",
+            "description": "Solutions Architect based in Port Harcourt, Nigeria, building role-based access control (RBAC) systems for everyday business operations and deploying them on the cloud.",
             "jobTitle": "Solutions Architect",
             "worksFor": [
                 {
