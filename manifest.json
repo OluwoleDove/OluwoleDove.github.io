@@ -1,14 +1,14 @@
 {
-    "name": "Oluwole Fasakin - Application Architect & Data Engineering Lead",
+    "name": "Oluwole Fasakin - Solutions Architect",
     "short_name": "Oluwole Fasakin",
-    "description": "Elite Application Architect & Data Engineering Lead with 9+ years experience. Specializing in scalable systems, data-driven products, and brand growth strategy.",
+    "description": "Solutions Architect designing scalable cloud platforms, data products, and software systems.",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#1e1e1e",
     "theme_color": "#007aff",
     "orientation": "portrait-primary",
     "scope": "/",
-    "lang": "en-US",
+    "lang": "en-NG",
     "dir": "ltr",
     "categories": ["business", "technology", "portfolio"],
     "icons": [

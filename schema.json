@@ -6,20 +6,12 @@
             "@id": "https://oluwoledove.github.io/#website",
             "url": "https://oluwoledove.github.io/",
             "name": "Oluwole Fasakin Portfolio",
-            "description": "Elite Application Architect & Data Engineering Lead Portfolio",
+            "description": "Solutions architecture, cloud engineering, data products, and selected projects by Oluwole Fasakin in Nigeria.",
             "publisher": {
                 "@id": "https://oluwoledove.github.io/#person"
             },
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": {
-                    "@type": "EntryPoint",
-                    "urlTemplate": "https://www.google.com/search?q=site:oluwoledove.github.io+{search_term_string}"
-                },
-                "query-input": "required name=search_term_string"
-            },
-            "inLanguage": ["en-US", "es-ES"],
-            "copyrightYear": 2025,
+            "inLanguage": "en",
+            "copyrightYear": 2026,
             "copyrightHolder": {
                 "@id": "https://oluwoledove.github.io/#person"
             }
@@ -36,10 +28,10 @@
                 "url": "https://oluwoledove.github.io/img/fash_wit.png",
                 "width": 400,
                 "height": 400,
-                "caption": "Oluwole Fasakin - Application Architect & Data Engineering Lead"
+                "caption": "Oluwole Fasakin - Solutions Architect"
             },
-            "description": "Elite Application Architect & Data Engineering Lead with 9+ years experience delivering data-driven products and scalable engineering systems. Top 0.5% tech professional specializing in Python, React, Next.js, AWS, and brand growth strategy.",
-            "jobTitle": "Application Architect & Data Engineering Lead",
+            "description": "Solutions Architect based in Port Harcourt, Nigeria, designing scalable software systems, cloud platforms, and data-driven products.",
+            "jobTitle": "Solutions Architect",
             "worksFor": [
                 {
                     "@type": "Organization",
@@ -88,11 +80,14 @@
                 "@type": "PostalAddress",
                 "addressLocality": "Port Harcourt",
                 "addressRegion": "Rivers",
-                "addressCountry": "Nigeria",
-                "postalCode": ""
+                "addressCountry": "Nigeria"
             },
             "email": "mailto:oluwolefasakin007@gmail.com",
-            "telephone": "",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "project inquiries",
+                "email": "oluwolefasakin007@gmail.com"
+            },
             "sameAs": [
                 "https://www.linkedin.com/in/oluwole-fasakin-b05098b0/",
                 "https://github.com/OluwoleDove",
@@ -101,6 +96,10 @@
             ],
             "knowsAbout": [
                 "Application Architecture",
+                "Solutions Architecture",
+                "Software Architecture",
+                "Cloud Engineering",
+                "Data Products",
                 "Data Engineering",
                 "Python",
                 "React",
@@ -178,7 +177,7 @@
             ],
             "hasOccupation": {
                 "@type": "Occupation",
-                "name": "Application Architect & Data Engineering Lead",
+                "name": "Solutions Architect",
                 "occupationLocation": {
                     "@type": "Country",
                     "name": "Worldwide"
@@ -190,7 +189,7 @@
             "@type": "ProfilePage",
             "@id": "https://oluwoledove.github.io/#profilepage",
             "url": "https://oluwoledove.github.io/",
-            "name": "Oluwole Fasakin - Application Architect & Data Engineering Lead",
+            "name": "Oluwole Fasakin - Solutions Architect",
             "isPartOf": {
                 "@id": "https://oluwoledove.github.io/#website"
             },
@@ -201,8 +200,8 @@
                 "@id": "https://oluwoledove.github.io/#person"
             },
             "datePublished": "2024-01-01",
-            "dateModified": "2026-01-04",
-            "inLanguage": "en-US"
+            "dateModified": "2026-10-04",
+            "inLanguage": "en"
         },
         {
             "@type": "ItemList",
@@ -251,18 +250,17 @@
         {
             "@type": "ItemList",
             "@id": "https://oluwoledove.github.io/#projects",
-            "name": "Projects by Oluwole Fasakin",
-            "description": "Portfolio of projects and initiatives",
+            "name": "Selected software and technology projects",
+            "description": "Selected software, cloud, and digital product projects by Oluwole Fasakin.",
             "itemListElement": [
                 {
                     "@type": "ListItem",
                     "position": 1,
                     "item": {
                         "@type": "WebApplication",
-                        "name": "WitsLens",
-                        "url": "https://www.witslens.com",
-                        "description": "Innovative e-learning platform focused on scalability and member experience",
-                        "applicationCategory": "EducationalApplication"
+                        "name": "Formsaly",
+                        "url": "https://formsaly.bizhash.com/",
+                        "description": "Voice-powered form and plan creation for lead generation."
                     }
                 },
                 {
@@ -270,19 +268,18 @@
                     "position": 2,
                     "item": {
                         "@type": "WebSite",
-                        "name": "TechCurious",
-                        "url": "https://www.instagram.com/4dtechcurious/",
-                        "description": "Innovation hub answering technology curiosity"
+                        "name": "My Solace Pointe",
+                        "url": "https://mysolacepointe.com/",
+                        "description": "Evidence-based telepsychiatry, medication management, and psychotherapy serving Indiana."
                     }
                 },
                 {
                     "@type": "ListItem",
                     "position": 3,
                     "item": {
-                        "@type": "WebApplication",
-                        "name": "La Necar Logistics Web Solutions",
-                        "description": "Custom logistics management applications for La Necar Logistics LLC, New Jersey",
-                        "applicationCategory": "BusinessApplication"
+                        "@type": "WebSite",
+                        "name": "Bizhash",
+                        "description": "Digital business tools for simplifying operations."
                     }
                 }
             ]
@@ -290,31 +287,21 @@
         {
             "@type": "Service",
             "@id": "https://oluwoledove.github.io/#services",
-            "name": "Application Architecture & Data Engineering Services",
+            "name": "Solutions Architecture and Software Engineering",
             "provider": {
                 "@id": "https://oluwoledove.github.io/#person"
             },
             "serviceType": [
-                "Software Development",
-                "Data Engineering",
-                "Cloud Architecture",
-                "Brand Strategy",
-                "Product Management",
-                "Technical Consulting"
+                "Solutions Architecture",
+                "Software Architecture",
+                "Cloud Engineering",
+                "Data Engineering"
             ],
             "areaServed": {
                 "@type": "Place",
                 "name": "Worldwide"
             },
-            "description": "Professional services in application architecture, data engineering, scalable systems design, and brand growth strategy. Available for consulting, contract work, and full-time opportunities.",
-            "offers": {
-                "@type": "Offer",
-                "availability": "https://schema.org/InStock",
-                "priceSpecification": {
-                    "@type": "PriceSpecification",
-                    "priceCurrency": "USD"
-                }
-            }
+            "description": "Project-based architecture and engineering for teams building scalable software systems, cloud platforms, and data products. Contact Oluwole to discuss a project."
         },
         {
             "@type": "ScholarlyArticle",
@@ -343,6 +330,20 @@
             },
             "datePublished": "2024",
             "url": "https://doi.org/10.1186/s42522-024-00108-6"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "@id": "https://doi.org/10.3389/fcdhc.2026.1749421",
+            "headline": "Malnutrition and type 2 diabetes mellitus across diverse global populations: a systematic review of observational evidence",
+            "author": {
+                "@id": "https://oluwoledove.github.io/#person"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Frontiers in Clinical Diabetes and Healthcare"
+            },
+            "datePublished": "2026",
+            "url": "https://doi.org/10.3389/fcdhc.2026.1749421"
         },
         {
             "@type": "BreadcrumbList",

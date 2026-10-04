@@ -1,6 +1,6 @@
 # Robots.txt for Oluwole Fasakin Portfolio
 # https://oluwoledove.github.io/
-# Last updated: 2026-01-04
+# Last updated: 2026-10-04
 
 # Allow all major search engines full access
 User-agent: Googlebot
@@ -108,7 +108,6 @@ Disallow: /
 # Sitemap locations
 Sitemap: https://oluwoledove.github.io/sitemap.xml
 Sitemap: https://oluwoledove.github.io/sitemap-images.xml
-Sitemap: https://oluwoledove.github.io/sitemap-video.xml
 
 # Host directive (for Yandex)
 Host: https://oluwoledove.github.io

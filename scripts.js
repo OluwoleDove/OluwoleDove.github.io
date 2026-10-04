@@ -203,7 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 11. Console Easter Egg ---
     console.log('%c Oluwole Fasakin Portfolio ', 'background: #007aff; color: white; font-size: 16px; padding: 10px; border-radius: 5px;');
-    console.log('%c Application Architect & Data Engineering Lead ', 'color: #007aff; font-size: 12px;');
+    console.log('%c Solutions Architect ', 'color: #007aff; font-size: 12px;');
     console.log('%c Interested in working together? Email: oluwolefasakin007@gmail.com ', 'color: #a0a0a0; font-size: 11px;');
 
 });

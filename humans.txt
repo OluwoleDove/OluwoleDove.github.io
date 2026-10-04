@@ -1,7 +1,7 @@
 /* TEAM */
 
 Developer & Designer: Oluwole Fasakin
-Title: Application Architect & Data Engineering Lead
+Title: Solutions Architect
 Contact: oluwolefasakin007@gmail.com
 Twitter: @oaf_sage
 LinkedIn: oluwole-fasakin-b05098b0
@@ -18,14 +18,14 @@ Charts: Chart.js
 
 /* SITE */
 
-Last update: 2026/01/04
+Last update: 2026/10/04
 Language: English, Spanish
 Doctype: HTML5
 IDE: Visual Studio Code
 Standards: HTML5, CSS3, ES6+
 Components: Responsive Design, Dark/Light Mode, PWA Ready
 Frameworks: Vanilla JavaScript
-SEO: Comprehensive schema.org structured data
+SEO: Canonical metadata, schema.org structured data, XML sitemaps
 
 /* SKILLS */
 
@@ -52,17 +52,16 @@ EPC - Engineering and project consulting
 75%+ product adoption increase
 99.8% deployment reliability
 Bronze Winner - CHARM Africa Engage 2024 Hackathon
-2 Peer-reviewed research publications
+3 Peer-reviewed research publications
 B.Eng., Electrical & Electronics Engineering (GPA: 4.11/5.0)
 Google UI/UX Certificate (in progress)
 Diploma in Project Management
 
 /* PROJECTS */
 
-WitsLens: EdTech Platform - www.witslens.com
-TechCurious: Innovation Hub - @4dtechcurious
-La Necar Logistics LLC: 2 Web Solutions
-Lead Magnet System: Growth Marketing
+Formsaly: Voice-powered form and plan creation - https://formsaly.bizhash.com/
+My Solace Pointe: Telepsychiatry and mental health services - https://mysolacepointe.com/
+Bizhash: Digital business tools
 
 /* LANGUAGES */
 

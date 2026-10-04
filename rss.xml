@@ -6,12 +6,12 @@
      xmlns:media="http://search.yahoo.com/mrss/">
 
     <channel>
-        <title>Oluwole Fasakin - Application Architect & Data Engineering Lead</title>
+        <title>Oluwole Fasakin - Solutions Architect</title>
         <link>https://oluwoledove.github.io/</link>
-        <description>Updates, projects, and insights from Oluwole Fasakin - Elite Application Architect & Data Engineering Lead with 9+ years experience delivering data-driven products and scalable engineering systems.</description>
-        <language>en-US</language>
-        <lastBuildDate>Sat, 04 Jan 2026 00:00:00 GMT</lastBuildDate>
-        <pubDate>Sat, 04 Jan 2026 00:00:00 GMT</pubDate>
+        <description>Selected software architecture, cloud engineering, data product projects, and research by Oluwole Fasakin, Solutions Architect in Nigeria.</description>
+        <language>en-NG</language>
+        <lastBuildDate>Sun, 04 Oct 2026 00:00:00 GMT</lastBuildDate>
+        <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
         <ttl>1440</ttl>
         <atom:link href="https://oluwoledove.github.io/rss.xml" rel="self" type="application/rss+xml"/>
         <image>
@@ -27,28 +27,19 @@
         <category>Technology</category>
         <category>Software Development</category>
         <category>Data Engineering</category>
-        <category>Application Architecture</category>
+        <category>Solutions Architecture</category>
+        <category>Cloud Engineering</category>
 
         <item>
-            <title>Portfolio Update: New Brands & Client Work Added</title>
+            <title>Portfolio Update: Solutions Architecture and Selected Projects</title>
             <link>https://oluwoledove.github.io/</link>
-            <guid isPermaLink="true">https://oluwoledove.github.io/#portfolio-update-2026</guid>
-            <pubDate>Sat, 04 Jan 2026 00:00:00 GMT</pubDate>
+            <guid isPermaLink="true">https://oluwoledove.github.io/#portfolio-update-2026-10</guid>
+            <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
             <dc:creator>Oluwole Fasakin</dc:creator>
-            <description>Excited to announce major updates to my portfolio showcasing work with IBM, Smooth Apply AI, LSTG, PHC CivcX, T.Valton, and EPC. Also featuring new client work for La Necar Logistics LLC including two web solutions and a highly effective lead magnet system.</description>
+            <description>The portfolio has been refreshed to highlight solutions architecture, cloud engineering, selected software projects, and research. Get in touch to discuss a project.</description>
             <content:encoded><![CDATA[
-                <p>I'm thrilled to share major updates to my professional portfolio:</p>
-                <h3>Brands I've Scaled</h3>
-                <ul>
-                    <li><strong>Smooth Apply AI</strong> - AI-powered job application platform</li>
-                    <li><strong>LSTG</strong> - Digital transformation initiative</li>
-                    <li><strong>IBM</strong> - Enterprise technology consulting</li>
-                    <li><strong>PHC CivcX</strong> - Civic technology solutions</li>
-                    <li><strong>T.Valton</strong> - Brand growth strategy</li>
-                    <li><strong>EPC</strong> - Engineering and project consulting</li>
-                </ul>
-                <h3>Client Work</h3>
-                <p>Delivered comprehensive solutions for La Necar Logistics LLC including custom logistics management applications and a high-converting lead magnet system.</p>
+                <p>The portfolio has been refreshed to highlight solutions architecture, cloud engineering, selected software projects, and research.</p>
+                <p>Contact Oluwole Fasakin to discuss a project.</p>
             ]]></content:encoded>
             <category>portfolio</category>
             <category>brands</category>
@@ -57,49 +48,35 @@
         </item>
 
         <item>
-            <title>WitsLens: EdTech Platform - Digital Growth Strategy</title>
-            <link>https://oluwoledove.github.io/#projects</link>
-            <guid isPermaLink="true">https://oluwoledove.github.io/#witslens-edtech</guid>
-            <pubDate>Sat, 15 Jun 2024 00:00:00 GMT</pubDate>
+            <title>Formsaly: Voice-Powered Forms and Plans</title>
+            <link>https://formsaly.bizhash.com/</link>
+            <guid isPermaLink="true">https://formsaly.bizhash.com/</guid>
+            <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
             <dc:creator>Oluwole Fasakin</dc:creator>
-            <description>Led the digital growth and operational strategy for WitsLens, an innovative e-learning platform. Focused on enhancing scalability, member experience, and analytics visibility.</description>
+            <description>Formsaly turns spoken ideas into forms and plans to help businesses capture leads with less manual setup.</description>
             <content:encoded><![CDATA[
-                <p>WitsLens is an innovative EdTech platform designed to help learners explore knowledge through a clear lens.</p>
-                <p>As the digital strategy lead, I focused on:</p>
-                <ul>
-                    <li>Platform scalability and performance optimization</li>
-                    <li>User experience enhancement</li>
-                    <li>Analytics visibility and data-driven decision making</li>
-                    <li>Member engagement and retention strategies</li>
-                </ul>
+                <p>Formsaly is a voice-powered form and plan creation platform for lead generation.</p>
             ]]></content:encoded>
-            <category>EdTech</category>
-            <category>e-learning</category>
+            <category>Software</category>
+            <category>Lead generation</category>
             <category>project</category>
-            <media:content url="https://oluwoledove.github.io/img/witslens.png" medium="image" type="image/png"/>
+            <media:content url="https://oluwoledove.github.io/img/formsaly.png" medium="image" type="image/png"/>
         </item>
 
         <item>
-            <title>TechCurious: Innovation Community Launch</title>
-            <link>https://oluwoledove.github.io/techcurious.html</link>
-            <guid isPermaLink="true">https://oluwoledove.github.io/techcurious</guid>
-            <pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate>
+            <title>My Solace Pointe: Telepsychiatry in Indiana</title>
+            <link>https://mysolacepointe.com/</link>
+            <guid isPermaLink="true">https://mysolacepointe.com/</guid>
+            <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
             <dc:creator>Oluwole Fasakin</dc:creator>
-            <description>Directed end-to-end digital strategy for TechCurious, an innovation community managing budgets and leading cross-functional teams to boost brand engagement and educational outcomes.</description>
+            <description>My Solace Pointe provides telepsychiatry, medication management, and psychotherapy to patients across Indiana.</description>
             <content:encoded><![CDATA[
-                <p>TechCurious answers your spoken and unspoken technology curiosity.</p>
-                <p>Key achievements:</p>
-                <ul>
-                    <li>End-to-end digital strategy development</li>
-                    <li>Cross-functional team leadership</li>
-                    <li>Brand engagement optimization</li>
-                    <li>Educational content delivery</li>
-                </ul>
+                <p>My Solace Pointe provides evidence-based telepsychiatry and mental health care to patients across Indiana.</p>
             ]]></content:encoded>
-            <category>innovation</category>
-            <category>technology</category>
-            <category>community</category>
-            <media:content url="https://oluwoledove.github.io/img/techcurious.png" medium="image" type="image/png"/>
+            <category>Healthcare</category>
+            <category>Telepsychiatry</category>
+            <category>project</category>
+            <media:content url="https://oluwoledove.github.io/img/solacepointe.png" medium="image" type="image/png"/>
         </item>
 
         <item>
@@ -124,6 +101,17 @@
             <category>research</category>
             <category>publication</category>
             <category>One Health</category>
+        </item>
+
+        <item>
+            <title>Research Publication: Malnutrition and Type 2 Diabetes Across Global Populations</title>
+            <link>https://doi.org/10.3389/fcdhc.2026.1749421</link>
+            <guid isPermaLink="false">doi:10.3389/fcdhc.2026.1749421</guid>
+            <dc:creator>Oluwole Fasakin</dc:creator>
+            <description>Systematic review of observational evidence on malnutrition and type 2 diabetes mellitus across diverse global populations. Frontiers in Clinical Diabetes and Healthcare, 2026. Research role included meta-analysis, scoping review, a geographic distribution map, and risk-of-bias plots.</description>
+            <category>research</category>
+            <category>publication</category>
+            <category>diabetes</category>
         </item>
 
     </channel>

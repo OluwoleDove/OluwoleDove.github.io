@@ -118,11 +118,11 @@ Website-Owner: Oluwole Fasakin
 # PROFESSIONAL METADATA FOR AI SYSTEMS
 # =============================================================================
 
-Professional-Title: Application Architect & Data Engineering Lead
+Professional-Title: Solutions Architect
 Years-Experience: 9+
 Location: Port Harcourt, Nigeria
 Languages: English (Native), Spanish (Proficient)
-Expertise: Python, React, Next.js, AWS, Data Engineering, Product Management
+Expertise: Solutions Architecture, Software Architecture, Cloud Engineering, Data Engineering, Python, React, Next.js, AWS
 Availability: Open to opportunities
 
 # Brands Worked With:

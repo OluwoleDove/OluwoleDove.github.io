@@ -1637,7 +1637,6 @@ body.light-mode .navbar {
 .focus-card,
 .expertise-category,
 .deployment-card,
-.research-item-new,
 .education-card-new,
 .language-card,
 .client-card {
@@ -1658,7 +1657,6 @@ body.light-mode .navbar {
 .focus-card:hover,
 .expertise-category:hover,
 .deployment-card:hover,
-.research-item-new:hover,
 .education-card-new:hover,
 .language-card:hover,
 .client-card:hover {
@@ -1715,32 +1713,6 @@ body.light-mode .navbar {
 .expertise-tag,
 .deployment-tag {
     border-radius: 999px;
-}
-
-.research-grid {
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
-    align-items: stretch;
-    gap: 1.5rem;
-}
-
-.research-item-new {
-    display: flex;
-    flex-direction: column;
-    padding: 1.75rem;
-}
-
-.research-item-new h3 {
-    font-size: clamp(1.15rem, 1.4vw, 1.35rem);
-    line-height: 1.42;
-}
-
-.research-item-new p {
-    line-height: 1.7;
-}
-
-.research-item-new .doi-link {
-    margin-top: auto;
-    padding-top: 1.25rem;
 }
 
 .social-links a,
@@ -1807,5 +1779,171 @@ body.light-mode .navbar {
     .reveal {
         opacity: 1;
         transform: none;
+    }
+}
+
+#hero {
+    min-height: 100svh;
+}
+
+#hero > .container {
+    width: 100%;
+    max-width: none;
+    padding-inline: clamp(1.25rem, 5vw, 5rem);
+}
+
+#hero .hero-layout {
+    width: 100%;
+    max-width: none;
+    gap: clamp(2rem, 6vw, 6rem);
+}
+
+#hero .hero-left {
+    max-width: none;
+}
+
+#hero .hero-main-title {
+    max-width: 12ch;
+}
+
+#hero .hero-description {
+    max-width: 62ch;
+}
+
+#hero .hero-right {
+    flex: 0 1 440px;
+}
+
+.approach-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+    align-items: center;
+    gap: clamp(3rem, 9vw, 9rem);
+}
+
+.approach-copy .section-title {
+    text-align: left;
+    margin-bottom: 1.5rem;
+    font-size: clamp(3.25rem, 5.6vw, 5.4rem);
+    line-height: 0.98;
+    max-width: 14ch;
+}
+
+.approach-copy .section-title::after {
+    left: 0;
+    transform: none;
+}
+
+#about .about-intro {
+    max-width: 58ch;
+    margin: 0 0 2.5rem;
+    font-size: clamp(1.05rem, 1.3vw, 1.2rem);
+    text-align: left;
+}
+
+.approach-steps {
+    list-style: none;
+    border-top: 1px solid var(--border-color);
+}
+
+.approach-step {
+    display: grid;
+    grid-template-columns: 2.5rem minmax(0, 1fr) 1.5rem;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.1rem 0;
+    border-bottom: 1px solid var(--border-color);
+    text-align: left;
+}
+
+.approach-step-number {
+    color: var(--text-medium);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.approach-step h3 {
+    font-size: clamp(1rem, 1.2vw, 1.15rem);
+    margin: 0;
+    text-align: left;
+}
+
+.approach-step-icon {
+    color: var(--primary-accent);
+    font-size: 1rem;
+    justify-self: end;
+}
+
+.approach-portrait {
+    position: relative;
+    width: min(100%, 480px);
+    justify-self: center;
+}
+
+.approach-portrait > img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1.08;
+    object-fit: cover;
+    object-position: center 25%;
+    border: 1px solid var(--border-color);
+    border-radius: 1.25rem;
+    box-shadow: var(--shadow-card-hover);
+}
+
+.approach-portrait-caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0.25rem 0;
+    color: var(--text-medium);
+    font-size: 0.9rem;
+}
+
+.approach-portrait-caption > :first-child {
+    color: var(--text-white);
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.approach-portrait-caption i {
+    color: var(--primary-accent);
+}
+
+#contact .btn-secondary {
+    margin-left: 0.75rem;
+}
+
+@media (max-width: 768px) {
+    #hero {
+        min-height: auto;
+    }
+
+    #hero > .container {
+        padding-inline: 1.25rem;
+    }
+
+    .approach-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .approach-copy .section-title {
+        text-align: center;
+    }
+
+    .approach-copy .section-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .approach-portrait {
+        width: min(100%, 380px);
+    }
+
+    #contact .btn-secondary {
+        margin: 1rem 0 0;
     }
 }

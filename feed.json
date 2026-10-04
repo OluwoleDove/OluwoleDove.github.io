@@ -1,9 +1,9 @@
 {
     "version": "https://jsonfeed.org/version/1.1",
-    "title": "Oluwole Fasakin - Application Architect & Data Engineering Lead",
+    "title": "Oluwole Fasakin - Solutions Architect",
     "home_page_url": "https://oluwoledove.github.io/",
     "feed_url": "https://oluwoledove.github.io/feed.json",
-    "description": "Updates, projects, and insights from Oluwole Fasakin - Elite Application Architect & Data Engineering Lead with 9+ years experience delivering data-driven products and scalable engineering systems.",
+    "description": "Selected software architecture, cloud engineering, data product projects, and research by Oluwole Fasakin, Solutions Architect in Nigeria.",
     "icon": "https://oluwoledove.github.io/img/fash_wit.png",
     "favicon": "https://oluwoledove.github.io/img/favicon.ico",
     "language": "en-US",
@@ -16,49 +16,64 @@
     ],
     "items": [
         {
-            "id": "https://oluwoledove.github.io/#portfolio-update-2026",
+            "id": "https://oluwoledove.github.io/#portfolio-update-2026-10",
             "url": "https://oluwoledove.github.io/",
-            "title": "Portfolio Update: New Brands & Client Work Added",
-            "content_html": "<p>Excited to announce major updates to my portfolio showcasing work with IBM, Smooth Apply AI, LSTG, PHC CivcX, T.Valton, and EPC. Also featuring new client work for La Necar Logistics LLC.</p>",
-            "summary": "Portfolio updated with new brand partnerships and client work including IBM, Smooth Apply AI, and logistics solutions.",
-            "date_published": "2026-01-04T00:00:00Z",
-            "date_modified": "2026-01-04T00:00:00Z",
+            "title": "Portfolio Update: Solutions Architecture and Selected Projects",
+            "content_html": "<p>The portfolio has been refreshed to highlight solutions architecture, cloud engineering, selected software projects, and research. Get in touch to discuss a project.</p>",
+            "summary": "Solutions Architect in Nigeria focused on scalable software systems, cloud platforms, and data products.",
+            "date_published": "2026-10-04T00:00:00Z",
+            "date_modified": "2026-10-04T00:00:00Z",
             "authors": [
                 {
                     "name": "Oluwole Fasakin"
                 }
             ],
-            "tags": ["portfolio", "brands", "client work", "IBM", "logistics"],
+            "tags": ["portfolio", "solutions architecture", "cloud engineering", "software"],
             "language": "en"
         },
         {
-            "id": "https://oluwoledove.github.io/#witslens-edtech",
+            "id": "https://oluwoledove.github.io/#formsaly",
             "url": "https://oluwoledove.github.io/#projects",
-            "title": "WitsLens: EdTech Platform Launch",
-            "content_html": "<p>Led the digital growth and operational strategy for WitsLens, an innovative e-learning platform. Focused on enhancing scalability, member experience, and analytics visibility.</p>",
-            "summary": "WitsLens EdTech platform - exploring learning through a clear lens.",
-            "date_published": "2024-06-15T00:00:00Z",
+            "title": "Formsaly: Voice-Powered Forms and Plans",
+            "content_html": "<p>Formsaly turns spoken ideas into forms and plans to help businesses capture leads with less manual setup.</p>",
+            "summary": "Voice-powered form and plan creation for lead generation.",
+            "date_published": "2026-10-04T00:00:00Z",
             "authors": [
                 {
                     "name": "Oluwole Fasakin"
                 }
             ],
-            "tags": ["EdTech", "e-learning", "project", "education"],
+            "tags": ["software", "forms", "lead generation", "project"],
             "language": "en"
         },
         {
-            "id": "https://oluwoledove.github.io/#techcurious-launch",
-            "url": "https://oluwoledove.github.io/techcurious.html",
-            "title": "TechCurious: Innovation Hub Launch",
-            "content_html": "<p>Directed end-to-end digital strategy for TechCurious, an innovation community managing budgets and leading cross-functional teams to boost brand engagement and educational outcomes.</p>",
-            "summary": "TechCurious - answering your spoken and unspoken technology curiosity.",
-            "date_published": "2024-03-01T00:00:00Z",
+            "id": "https://oluwoledove.github.io/#my-solace-pointe",
+            "url": "https://mysolacepointe.com/",
+            "title": "My Solace Pointe: Telepsychiatry in Indiana",
+            "content_html": "<p>My Solace Pointe provides telepsychiatry, medication management, and psychotherapy to patients across Indiana.</p>",
+            "summary": "Evidence-based telepsychiatry and mental health care serving Indiana.",
+            "date_published": "2026-10-04T00:00:00Z",
             "authors": [
                 {
                     "name": "Oluwole Fasakin"
                 }
             ],
-            "tags": ["innovation", "technology", "community", "education"],
+            "tags": ["healthcare", "telepsychiatry", "project"],
+            "language": "en"
+        },
+        {
+            "id": "https://doi.org/10.3389/fcdhc.2026.1749421",
+            "url": "https://doi.org/10.3389/fcdhc.2026.1749421",
+            "external_url": "https://doi.org/10.3389/fcdhc.2026.1749421",
+            "title": "Malnutrition and type 2 diabetes mellitus across diverse global populations: a systematic review of observational evidence",
+            "content_html": "<p>Research Analyst role: co-conducted the meta-analysis and scoping review and created the geographic distribution map and risk-of-bias plots.</p>",
+            "summary": "Systematic review of observational evidence published in Frontiers in Clinical Diabetes and Healthcare, 2026.",
+            "authors": [
+                {
+                    "name": "Oluwole Fasakin"
+                }
+            ],
+            "tags": ["research", "publication", "diabetes", "meta-analysis"],
             "language": "en"
         },
         {
