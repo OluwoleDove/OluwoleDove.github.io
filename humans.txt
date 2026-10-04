@@ -49,7 +49,7 @@ EPC - Engineering and project consulting
 /* ACHIEVEMENTS */
 
 9+ years professional experience
-75%+ product adoption increase
+89%+ product adoption increase
 99.8% deployment reliability
 Bronze Winner - CHARM Africa Engage 2024 Hackathon
 3 Peer-reviewed research publications
