@@ -1197,27 +1197,17 @@ body.light-mode .brand-logo-card a:hover {
 }
 
 /* 13. THOUGHT LEADERSHIP */
-.research-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+.research-list {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--border-color);
 }
 
 .research-item-new {
-    background: var(--secondary-dark);
-    padding: 2.5rem;
-    border-radius: 15px;
-    box-shadow: var(--shadow-card);
-    border: 1px solid var(--border-color);
-    transition: transform var(--transition-medium) var(--ease-smooth),
-                box-shadow var(--transition-medium) var(--ease-smooth),
-                background-color var(--transition-medium) var(--ease-smooth),
-                border-color var(--transition-medium) var(--ease-smooth);
-}
-
-.research-item-new:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-card-hover);
+    padding: 1.75rem 0;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .research-item-new h3 {
@@ -1241,7 +1231,7 @@ body.light-mode .brand-logo-card a:hover {
 .research-item-new .doi-link {
     font-size: 0.9rem;
     color: var(--text-medium);
-    margin-top: 1rem;
+    margin-top: 0.75rem;
     display: inline-block;
     transition: color var(--transition-speed) var(--ease-smooth);
 }
@@ -1601,6 +1591,16 @@ body.light-mode section:not(#hero) {
     background-color: var(--primary-dark);
 }
 
+body section#about {
+    --primary-accent: #4f46e5;
+    --text-light: #586579;
+    --text-medium: #8290a4;
+    --text-white: #171923;
+    --border-color: #dfe5ed;
+    --shadow-card-hover: 0 18px 42px rgba(29, 42, 68, 0.14);
+    background-color: #ffffff;
+}
+
 #contact p {
     max-width: 800px;
     margin-inline: auto;
@@ -1816,42 +1816,51 @@ body.light-mode .navbar {
 
 .approach-layout {
     display: grid;
-    grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+    grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
     align-items: center;
-    gap: clamp(3rem, 9vw, 9rem);
+    gap: clamp(3rem, 7vw, 7rem);
 }
 
-.approach-copy .section-title {
+.approach-eyebrow {
+    margin: 0 0 1rem;
+    color: var(--primary-accent);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.approach-headline {
     text-align: left;
-    margin-bottom: 1.5rem;
-    font-size: clamp(3.25rem, 5.6vw, 5.4rem);
+    margin-bottom: 1.25rem;
+    font-size: clamp(3rem, 5.4vw, 5.5rem);
     line-height: 0.98;
-    max-width: 14ch;
-}
-
-.approach-copy .section-title::after {
-    left: 0;
-    transform: none;
+    letter-spacing: -0.055em;
+    max-width: 10ch;
 }
 
 #about .about-intro {
-    max-width: 58ch;
-    margin: 0 0 2.5rem;
+    max-width: 48ch;
+    margin: 0 0 2.25rem;
     font-size: clamp(1.05rem, 1.3vw, 1.2rem);
     text-align: left;
+    line-height: 1.8;
 }
 
 .approach-steps {
     list-style: none;
     border-top: 1px solid var(--border-color);
+    padding: 0;
+    margin: 0;
 }
 
 .approach-step {
     display: grid;
-    grid-template-columns: 2.5rem minmax(0, 1fr) 1.5rem;
-    gap: 1rem;
+    grid-template-columns: 2rem minmax(0, 1fr);
+    gap: 1.25rem;
     align-items: center;
-    padding: 1.1rem 0;
+    min-height: 3.6rem;
+    padding: 0.75rem 0;
     border-bottom: 1px solid var(--border-color);
     text-align: left;
 }
@@ -1870,46 +1879,83 @@ body.light-mode .navbar {
 }
 
 .approach-step-icon {
-    color: var(--primary-accent);
-    font-size: 1rem;
-    justify-self: end;
+    display: none;
 }
 
-.approach-portrait {
+.approach-visual {
     position: relative;
-    width: min(100%, 480px);
+    width: 100%;
+    min-height: clamp(400px, 40vw, 620px);
+    aspect-ratio: 1.22 / 1;
     justify-self: center;
 }
 
-.approach-portrait > img {
+.approach-visual > img {
+    position: absolute;
+    top: 0;
+    left: 8%;
     display: block;
-    width: 100%;
-    aspect-ratio: 1 / 1.08;
+    width: 62%;
+    height: 84%;
     object-fit: cover;
-    object-position: center 25%;
+    object-position: center;
     border: 1px solid var(--border-color);
-    border-radius: 1.25rem;
+    border-radius: 0.8rem;
     box-shadow: var(--shadow-card-hover);
 }
 
-.approach-portrait-caption {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem 0.25rem 0;
-    color: var(--text-medium);
-    font-size: 0.9rem;
+.approach-visual-tile,
+.approach-visual-accent,
+.approach-visual-panel {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    border-radius: 0.8rem;
 }
 
-.approach-portrait-caption > :first-child {
-    color: var(--text-white);
-    font-size: 1.05rem;
-    font-weight: 600;
+.approach-visual-tile {
+    z-index: 1;
+    width: 25%;
+    height: 34%;
+    color: #26354a;
+    background: #f1f5f8;
+    box-shadow: 0 12px 34px rgba(31, 48, 70, 0.12);
+    font-size: clamp(1.5rem, 2.4vw, 2.5rem);
 }
 
-.approach-portrait-caption i {
-    color: var(--primary-accent);
+.approach-visual-tile--top {
+    top: 6%;
+    right: 1%;
+}
+
+.approach-visual-tile--bottom {
+    bottom: 0;
+    left: 8%;
+    width: 32%;
+    height: 28%;
+    color: #3347d5;
+    background: #eaf4fb;
+}
+
+.approach-visual-accent {
+    z-index: 2;
+    right: 38%;
+    bottom: 0;
+    width: 17%;
+    height: 28%;
+    color: #ffffff;
+    background: #4338df;
+    border-radius: 0.8rem 0 0 0.8rem;
+    font-size: clamp(1.4rem, 2vw, 2rem);
+}
+
+.approach-visual-panel {
+    right: 1%;
+    bottom: 0;
+    width: 40%;
+    height: 28%;
+    background: #e9f5fc;
+    border-radius: 0 0.8rem 0.8rem 0;
 }
 
 #contact .btn-secondary {
@@ -1930,17 +1976,13 @@ body.light-mode .navbar {
         gap: 2.5rem;
     }
 
-    .approach-copy .section-title {
-        text-align: center;
+    .approach-headline {
+        font-size: clamp(3rem, 12vw, 4.5rem);
     }
 
-    .approach-copy .section-title::after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .approach-portrait {
-        width: min(100%, 380px);
+    .approach-visual {
+        min-height: 320px;
+        aspect-ratio: 1.05 / 1;
     }
 
     #contact .btn-secondary {
