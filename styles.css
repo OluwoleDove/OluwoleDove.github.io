@@ -1038,6 +1038,13 @@ body.light-mode .brand-logo-card a:hover {
     transition: transform var(--transition-speed) var(--ease-smooth);
 }
 
+.vercel-logo {
+    display: block;
+    width: 1em;
+    height: auto;
+    margin-inline: auto;
+}
+
 .deployment-card:hover .deployment-icon {
     transform: scale(1.1);
 }
@@ -1601,6 +1608,17 @@ body section#about {
     background-color: #ffffff;
 }
 
+body section#thought-leadership {
+    --primary-accent: #1769d2;
+    --primary-dark: #ffffff;
+    --secondary-dark: #f0f4f8;
+    --text-light: #465468;
+    --text-medium: #68778a;
+    --text-white: #172335;
+    --border-color: #e0e6ee;
+    background-color: #ffffff;
+}
+
 #contact p {
     max-width: 800px;
     margin-inline: auto;
@@ -1819,15 +1837,6 @@ body.light-mode .navbar {
     grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
     align-items: center;
     gap: clamp(3rem, 7vw, 7rem);
-}
-
-.approach-eyebrow {
-    margin: 0 0 1rem;
-    color: var(--primary-accent);
-    font-size: 0.82rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
 }
 
 .approach-headline {
